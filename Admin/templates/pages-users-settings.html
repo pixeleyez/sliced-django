@@ -83,7 +83,7 @@
                             <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Your Photo</h2>
                             <div class="grid grid-cols-1 gap-4">
                                 <div class="flex items-center gap-4">
-                                    <img src="assets/images/user.png" class="w-16 h-16 rounded-full" alt="">
+                                    <img {% static "/assets/images/user.png" %} class="w-16 h-16 rounded-full" alt="">
                                     <div>
                                         <h5 class="text-lg font-bold dark:text-white">Stevens Laurie</h5>
                                         <p class="text-muted mt-0.5 dark:text-darkmuted">Ui/Ux Designer</p>
@@ -197,7 +197,7 @@
 
 {{> partials/vendor-scripts }}
 
-<script type="module" src="assets/js/main.js"></script>
+<script type="module" src = {% static "/assets/js/main.js" %}></script>
 
 </body>
 

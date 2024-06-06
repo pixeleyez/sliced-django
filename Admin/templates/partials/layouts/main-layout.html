@@ -1,0 +1,47 @@
+{% load static %} {% include "../components/main.html" %}
+<head>
+  {% block title %}{% endblock title %} {% include "../components/head-css.html" %}
+  {% block css %}{% endblock css %}
+</head>
+
+{% include "../components/body.html" %}
+
+<!-- Start Layout -->
+<div class="bg-[#f9fbfd] dark:bg-dark">
+
+    <!-- Start detached bg -->
+    <div class="bg-[url('../images/bg-main.png')] bg-black min-h-[220px] sm:min-h-[250px] bg-bottom fixed hidden w-full -z-50 detached-img"></div>
+    <!-- End detached bg -->
+
+    <!-- Start Menu Sidebar Olverlay -->
+    <div x-cloak class="fixed inset-0 bg-black/60 dark:bg-dark/90 z-[999] lg:hidden" :class="{'hidden' : !$store.app.sidebar}" @click="$store.app.toggleSidebar()"></div>
+    <!-- End Menu Sidebar Olverlay -->
+
+    <!-- Start Main Content -->
+    <div class="flex mx-auto main-container">
+        {% include "../components/sidebar.html" %}
+
+        <!-- Start Content Area -->
+        <div class="flex-1 main-content">
+
+            {% include "../components/topbar.html" %}
+
+            <!-- Start Content -->
+            <div class="h-[calc(100vh-60px)]  relative overflow-y-auto overflow-x-hidden p-4 space-y-4 detached-content">
+                <!-- Start All Card -->
+                {% block content %}{% endblock content %}
+                <!-- End All Card -->
+
+                {% include "../components/footer.html" %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "../components/vendor-scripts.html" %}
+
+{% block js %}{% endblock js %}
+
+</body>
+
+</html>

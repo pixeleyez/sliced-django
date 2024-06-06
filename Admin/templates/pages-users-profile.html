@@ -43,7 +43,7 @@
                             <div class="relative px-10 -mt-16">
                                 <div class="flex items-center justify-between gap-5">
                                     <div class="relative size-32">
-                                        <img src="assets/images/user.png" class="border-8 rounded-full border-light/50" alt="">
+                                        <img {% static "/assets/images/user.png" %} class="border-8 rounded-full border-light/50" alt="">
                                         <span class="absolute rounded-full size-5 bg-success bottom-2 ltr:right-4 rtl:left-4"></span>
                                     </div>
                                     <div>
@@ -139,7 +139,7 @@
 
 {{> partials/vendor-scripts }}
 
-<script type="module" src="assets/js/main.js"></script>
+<script type="module" src = {% static "/assets/js/main.js" %}></script>
 
 </body>
 

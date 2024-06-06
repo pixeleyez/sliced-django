@@ -1,0 +1,14 @@
+{% extends "partials/layouts/main-layout.html" %} 
+{% load static %} 
+{% block title %} 
+{% include "partials/components/title-meta.html" with title="Tabs" %}
+{% endblock title %} 
+{% block content %}
+{% include "partials/components/page-heading.html" with title="Apps" subTitle="Calender" %} 
+    <div id="calendar"></div>
+{% endblock %}
+{% block js %}
+    <script type="module" src= {% static "/assets/js/pages/calender.js" %}></script>
+    <!-- Custom js -->
+    <script type="module" src = {% static "/assets/js/main.js" %}></script>
+{% endblock %}

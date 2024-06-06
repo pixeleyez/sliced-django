@@ -40,8 +40,8 @@
                             <h2 class="mb-4 text-base font-semibold text-black dark:text-white/80">Card Title</h2>
                             <div class="grid grid-cols-1 gap-4">
                                 <div>
-                                    <img src="assets/images/logo-dark.svg" class="mx-auto h-11 dark:hidden " alt="">
-                                    <img src="assets/images/logo-light.svg" class="hidden mx-auto h-11 dark:block" alt="">
+                                    <img {% static "/assets/images/logo-dark.svg" %} class="mx-auto h-11 dark:hidden " alt="">
+                                    <img {% static "/assets/images/logo-light.svg" %} class="hidden mx-auto h-11 dark:block" alt="">
                                 </div>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
 
 
 
-<script type="module" src="assets/js/main.js"></script>
+<script type="module" src = {% static "/assets/js/main.js" %}></script>
 </body>
 
 </html>

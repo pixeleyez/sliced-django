@@ -18,8 +18,8 @@
         <nav class="px-4 lg:px-7 py-4 max-w-[1440px] mx-auto">
             <div class="flex flex-wrap items-center justify-between">
                 <a href="index.html" class="flex items-center">
-                    <img src="assets/images/logo-dark.svg" class="mx-auto dark-logo h-7 dark:hidden" alt="logo">
-                    <img src="assets/images/logo-light.svg" class="hidden mx-auto light-logo h-7 dark:block" alt="logo">
+                    <img {% static "/assets/images/logo-dark.svg" %} class="mx-auto dark-logo h-7 dark:hidden" alt="logo">
+                    <img {% static "/assets/images/logo-light.svg" %} class="hidden mx-auto light-logo h-7 dark:block" alt="logo">
                 </a>
                 <div class="flex items-center lg:order-2">
                     <a href="signup.html" class="btn bg-purple border-purple text-white hover:bg-purple/[0.85] hover:border-purple/[0.85]">Buy Now</a>
@@ -67,7 +67,7 @@
 
 {{> partials/vendor-scripts }}
 
-<script type="module" src="assets/js/main.js"></script>
+<script type="module" src = {% static "/assets/js/main.js" %}></script>
 
 </body>
 

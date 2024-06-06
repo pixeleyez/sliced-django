@@ -1,0 +1,30 @@
+{% extends "partials/layouts/main-layout.html" %} 
+{% load static %} 
+{% block title %} 
+{% include "partials/components/title-meta.html" with title="Flatpickr" %}
+{% endblock title %} 
+{% block content %}
+{% include "partials/components/page-heading.html" with title="Elements" subTitle="Flatpickr" %}
+    <!-- Start All Card -->
+    <div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div class="card">
+                <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Basic Example</h2>
+                <form class="space-y-4" >
+                    <input type="text" class="form-input" placeholder="Username" id="basicExample">
+                </form>
+            </div>
+            <div class="card">
+                <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Example</h2>
+                <form class="space-y-4" >
+                    <input type="text" class="form-input" placeholder="Username"  id="basicExample">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End All Card -->
+{% endblock content %}
+{% block js %}
+<script type="module" src = {% static "/assets/js/pages/flatpickr.js" %}></script>
+<script type="module" src = {% static "/assets/js/main.js" %}></script>
+{% endblock js %}
