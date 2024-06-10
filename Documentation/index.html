@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premium Tailwind CSS Admin & Dashboard Template" />
+    <meta name="author" content="SRBThemes" />
+
+    <!-- Site Tiltle -->
+    <title>Sliced - Tailwind CSS Admin & Dashboard Template</title>
+
+    <!-- Site favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body class="text-base antialiased text-black font-nunito">
+    <!-- Start Main Content -->
+    <div class="flex">
+        <!-- Start Sidebar -->
+        <nav
+            class="sidebar fixed top-0 bottom-0 z-40 flex-none w-[240px] border-r border-black/10 transition-all duration-300 md:block hidden">
+            <div class="h-full bg-white">
+                <!-- Start Logo -->
+                <div class="flex px-4 py-4">
+                    <a href="../html/index.html" class="flex-1 w-full main-logo">
+                        <img src="assets/images/logo-dark.svg" class="mx-auto h-7" alt="logo" />
+                    </a>
+                </div>
+                <!-- End Logo -->
+                <!-- Start Menu -->
+                <ul class="relative h-[calc(100vh-74px)] flex flex-col gap-1 overflow-y-auto overflow-x-hidden p-4 py-0"
+                    x-data="{ activeMenu: 'apps' }">
+                    <li>
+                        <a href="#intro"
+                            class="flex items-center gap-1 px-2 py-1 mb-1 overflow-hidden text-black rounded-md whitespace-nowrap hover:bg-purple/10 hover:text-purple">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#insto"
+                            class="flex items-center gap-1 px-2 py-1 mb-1 overflow-hidden text-black rounded-md whitespace-nowrap hover:bg-purple/10 hover:text-purple">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#structure"
+                            class="flex items-center gap-1 px-2 py-1 mb-1 overflow-hidden text-black rounded-md whitespace-nowrap hover:bg-purple/10 hover:text-purple">Structure</a>
+                    </li>
+                    <li>
+                        <a href="#layout"
+                            class="flex items-center gap-1 px-2 py-1 mb-1 overflow-hidden text-black rounded-md whitespace-nowrap hover:bg-purple/10 hover:text-purple">layout</a>
+                    </li>
+                    <li>
+                        <a href="#css"
+                            class="flex items-center gap-1 px-2 py-1 mb-1 overflow-hidden text-black rounded-md whitespace-nowrap hover:bg-purple/10 hover:text-purple">Css
+                            & Javascript</a>
+                    </li>
+                    <li>
+                        <a href="#cre"
+                            class="flex items-center gap-1 px-2 py-1 mb-1 overflow-hidden text-black rounded-md whitespace-nowrap hover:bg-purple/10 hover:text-purple">Credit
+                            & Resources</a>
+                    </li>
+                    <li>
+                        <a href="#credits"
+                            class="flex items-center gap-1 px-2 py-1 mb-1 overflow-hidden text-black rounded-md whitespace-nowrap hover:bg-purple/10 hover:text-purple">Credits</a>
+                    </li>
+                    <li>
+                        <a href="#support"
+                            class="flex items-center gap-1 px-2 py-1 mb-1 overflow-hidden text-black rounded-md whitespace-nowrap hover:bg-purple/10 hover:text-purple">Support</a>
+                    </li>
+                    <li>
+                        <a href="#change"
+                            class="flex items-center gap-1 px-2 py-1 mb-1 overflow-hidden text-black rounded-md whitespace-nowrap hover:bg-purple/10 hover:text-purple">Change
+                            Log</a>
+                    </li>
+                </ul>
+                <!-- End Menu -->
+            </div>
+        </nav>
+        <!-- End sidebar -->
+
+        <!-- Start Content Area -->
+        <div class="flex-1 md:ml-[240px]">
+            <div class="flex items-center justify-between py-4 border-b border-black/10 px-7">
+                <p class="text-lg font-bold">Sliced - Djngo Documentation 1.0.0</p>
+            </div>
+            <!-- Start Content -->
+            <div class="h-[calc(100vh-73px)] overflow-y-auto overflow-x-hidden">
+                <div class="p-4 sm:p-7 !pb-0 min-h-[calc(100vh-145px)]">
+                    <div class="grid grid-cols-1 gap-7">
+                        <div class="p-5 border rounded-md border-black/10" id="intro">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">🙏 Thank you for purchasing Sliced -
+                                    Django<small>(v5.0)</small> Admin Dashboard Template.</p>
+                            </div>
+                            <div class="rounded bg-[#01ba9a]/10 px-6 py-3 text-[#01ba9a]">
+                                <p>If you have any questions that are beyond the scope of this documentation, please
+                                    feel free to email or contact us via my page.Support Email:
+                                    <b>sup.srbthemes@gmail.com</b>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-5 border rounded-md border-black/10">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Introduction</p>
+                            </div>
+                            <div>
+                                <p class="text-base leading-[1.8]"><b>Sliced - Django</b> is a powerful admin dashboard
+                                    template built with Tailwind CSS. <b>Sliced</b> comes with dozens of functional
+                                    designs to help you get started quickly. With a wide range of beautiful styles and a
+                                    full-screen layout, it’s a perfect fit for admin dashboards, eCommerce, CRM, CMS,
+                                    LMS panels and etc. If you are looking to take your app to the next level –
+                                    <b>Sliced</b> is the way to go!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-5 border rounded-md border-black/10" id="req">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Getting Started Guide</p>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 10px;">This guide will walk you through the installation
+                                    process and prerequisites to get your admin dashboard up and running smoothly.
+                                <h4 class="page-header"><strong>Prerequisites</strong></h4>
+                                <span>Before you begin, make sure you have the following prerequisites installed on your
+                                    system.</span>
+                                </p>
+                                <table>
+                                    <tr class="text-left">
+                                        <th class="p-3 border border-[#424240]"
+                                            style="background-color: black; color: white;">Task</th>
+                                        <th class="p-3 border border-[#424240]"
+                                            style="background-color: black; color: white;">Instructions</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border border-[#424240]" style="background-color: #dbdad5;">
+                                            Node.js</td>
+                                        <td class="p-3 border border-[#424240]" style="background-color: #dbdad5;">
+                                            Make sure to have the
+                                            <a href="https://nodejs.org/en/download/current" target="_blank">Node.js 20
+                                            </a> installed & running in your computer. If
+                                            you already have installed Node.js on your computer, you can skip this step.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border border-[#424240]">Git</td>
+                                        <td class="p-3 border border-[#424240]">Make sure to have <a
+                                                href="https://git-scm.com/downloads" target="_blank">Git</a> installed &
+                                            running in your computer. If you already have installed composer on your
+                                            computer, you can skip this step.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border border-[#424240]" style="background-color: #dbdad5;">
+                                            Python 3.x</td>
+                                        <td class="p-3 border border-[#424240]" style="background-color: #dbdad5;">
+                                            Install Python on your machine. You can download it from Microsoft Store.
+                                            <a href="https://www.python.org/downloads/" target="_blank">
+                                                python.org
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 border border-[#424240]" style="background-color: #dbdad5;">
+                                            pip (lastest version recomended)</td>
+                                        <td class="p-3 border border-[#424240]" style="background-color: #dbdad5;">
+                                            <p class="mb-5">
+                                                Check pip version by running the following command in your terminal:
+                                            </p>
+                                            <p class="mb-5">
+                                                <span class="p-3 border rounded-md border-black/10 bg-black "
+                                                    style="margin-top: 10px;  color: white;" tabindex="0">
+                                                    <code class="language-markup">py -m pip --version </code>
+                                                </span>
+                                            </p>
+                                            <p class="mb-5">
+                                                If the version is less than 20.0.2 or not installed, run the following
+                                                command to upgrade pip:
+                                            </p>
+                                            <p class="mb-5">
+                                                <span class="p-3 border rounded-md border-black/10 bg-black "
+                                                    style="margin-top: 10px;  color: white;" tabindex="0">
+                                                    <code
+                                                        class="language-markup">py -m pip install --upgrade pip </code>
+                                                </span>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                        <div class="p-5 border rounded-md border-black/10" id="insto">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Installation</p>
+                            </div>
+                            <div>
+                                <h4 class="page-header">Installation Steps</h4>
+                                <p>Follow these simple steps to install and set up Sliced Admin Template:</p><br>
+
+                                <ul>
+                                    <li class="mb-5">
+                                        <p><b class="fs-1">Step 1: Unzip </b><br>Unzip The Downloaded Folder and open it
+                                            in vscode or any other code editor you use.</p><br>
+                                    </li>
+                                    <li class="mb-5">
+                                        <p><b class="fs-1">Step 2: Create Virtualenv by running following command:
+                                        </p>
+                                        <pre class="p-3 border rounded-md border-black/10"
+                                            style="margin-top: 10px; background-color: black; color: white;"
+                                            tabindex="0"><code class="language-markup">py -m venv virtualenv_name </code> </pre>
+                                    </li>
+                                    <li class="mb-5">
+                                        <p><b class="fs-1">Step 3: Activate Virtualenv by running following command:
+                                        </p>
+                                        <pre class="p-3 border rounded-md border-black/10"
+                                            style="margin-top: 10px; background-color: black; color: white;"
+                                            tabindex="0"><code class="language-markup">virtualenv_name\Scripts\activate.bat </code> </pre>
+                                    </li>
+                                    <li class="mb-5">
+                                        <p><b class="fs-1">Step 4: Navigate to Admin and run the following command to
+                                                install nodejs dependencies and build assets:
+                                        </p>
+                                        <pre class="p-3 border rounded-md border-black/10"
+                                            style="margin-top: 10px; background-color: black; color: white;"
+                                            tabindex="0"><code class="language-markup">npm i  </code> </pre>
+                                        <pre class="p-3 border rounded-md border-black/10"
+                                            style="margin-top: 10px; background-color: black; color: white;"
+                                            tabindex="0"><code class="language-markup">npm run build  </code> </pre>
+                                    </li>
+                                    <li class="mb-5">
+                                        <p><b class="fs-1">Step 5: Install all python dependencies by running following
+                                                command in the terminal:
+                                        </p>
+                                        <pre class="p-3 border rounded-md border-black/10"
+                                            style="margin-top: 10px; background-color: black; color: white;"
+                                            tabindex="0"><code class="language-markup">pip install -r requirement.txt </code> </pre>
+                                    </li>
+                                    <li class="mb-5">
+                                        <p><b class="fs-1">Step 6: create
+                                                <code>.env file in Admin/sliced directory and intialize variables as mentioned bellow:</code>.
+                                        </p>
+                                        <pre class="p-3 border rounded-md border-black/10"
+                                            style="margin-top: 10px; background-color: black; color: white;"
+                                            tabindex="0"><code class="language-markup"># Social auth google key and secrect key
+SOCIAL_AUTH_GOOGLE_OAUTH2_CLIENT_ID= &lt;your_google_client_id&gt;
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET= &lt;your_google_client_secret&gt;
+
+SOCIAL_AUTH_GITHUB_CLIENT_ID= &lt;your_github_client_id&gt;
+SOCIAL_AUTH_GITHUB_SECRET= &lt;your_github_client_secret&gt;
+
+EMAIL_HOST= &lt;your_smtp_provider_host&gt; //example:sandbox.smtp.mailtrap.io
+EMAIL_PORT= &lt;your_smtp_provider_supporting_port&gt;
+EMAIL_HOST_USER= &lt;your_user_account&gt; or &lt;your_user_mail&gt; as provider may require
+EMAIL_HOST_PASSWORD= &lt;your_user_password&gt; 
+ </code> </pre>
+                                    </li>
+                                    <li class="mb-5">
+                                        <p style="margin-top: 25px;"><b class="fs-1">Step 7: Now, run the Migrations,
+                                        </p>
+                                        <pre class="p-3 border rounded-md border-black/10"
+                                            style="margin-top: 10px; background-color: black; color: white;"
+                                            tabindex="0"><code class="language-markup">py manage.py makemigrations
+py manage.py migrate</code> </pre>
+                                    </li>
+                                    <li class="mb-5">
+                                        <p style="margin-top: 25px;"><b class="fs-1">Step 9: Run the project locally,
+                                                The development server is accessible at <a class="text-danger"
+                                                    href="http://127.0.0.1:8000"
+                                                    target="_blank">http://127.0.0.1:8000</a>.
+                                        </p>
+                                        <pre class="p-3 border rounded-md border-black/10"
+                                            style="margin-top: 10px; background-color: black; color: white;"
+                                            tabindex="0"><code class="language-markup">py manage.py runserver</code> </pre>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-5 border rounded-md border-black/10" id="structure">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">File Structure</p>
+                            </div>
+                            <div class="w-full overflow-x-auto">
+                                <pre class="prettyprint">
+├── 📁 Admin
+|    ├── 📁 apps <span class="text-muted">Django-App for different apps calender,chat etc.</span>
+|    ├── 📁 auhtentications <span class="text-muted">Django-App for auhtentication pages.</span>
+|    ├── 📁 dashboards <span class="text-muted">Django-App for different dashboards eCommerce, project, ui etc.</span>
+|    ├── 📁 forms_tables <span class="text-muted">Django-App for forms and tables components.</span>
+|    ├── 📁 layouts <span class="text-muted">Django-App for layouts pages.</span>
+|    ├── 📁 components <span class="text-muted">Django-App for different components used in template forms,layouts,ui etc.</span>
+|    ├── 📁 pages <span class="text-muted">Django-App for different pages.</span>
+|    ├── 📁 plugins <span class="text-muted">JavaScript plugins.</span>
+|    ├── 📁 sliced <span class="text-muted">The main django-app.</span>
+|    |    ├── 📄 settings.py <span class="text-muted">The main settings file for project.</span>
+|    |    ├── 📄 forms.py <span class="text-muted">All forms for authentication are here.</span>
+|    |    └── 📄 urls.py <span class="text-muted">The main entry point of api endpoints.</span
+    |    |    └── 📄 sample.env <span class="text-muted">Sample file to see all required envs.</span
+|    ├── 📁 src <span class="text-muted">All the assets files are here.</span>
+|    ├── 📁 templates
+|    |    ├── 📁 partials <span class="text-muted">All the partials and layouts html file are here.</span>
+|    |    ├── 📁 account <span class="text-muted">All the authentication html file are here.</span>
+|    |    ├── 📁 apps <span class="text-muted">All the apps html file are here.</span>
+|    |    ├── 📁 components <span class="text-muted">All the components html file are here.</span>
+|    |    ├── 📁 dashboards <span class="text-muted">All the dashboards html file are here.</span>
+|    |    ├── 📁 pages <span class="text-muted">All the pages html file are here.</span>
+|    |    └── 📁 pages <span class="text-muted">All the pages html file are here.</span>
+|    ├── 📁 ui <span class="text-muted">Django-App for different ui components and elements pages.</span>
+|    ├── 📁 users <span class="text-muted">Django-App for different user's pages.</span>
+|    ├── 📄 db.sqlite3 <span class="text-muted">Data base file.</span>
+|    ├── 📄 manage.py <span class="text-muted">project manage file.</span>
+|    ├── 📄 .gitignore
+|    ├── 📄 package.json
+|    ├── 📄 package-lock.json
+|    ├── 📄 tailwind.config
+|    └── 📄 tailwind.css
+</pre>
+                            </div>
+                        </div>
+                        <div class="p-5 border rounded-md border-black/10" style="margin-top: 25px;" id="layout">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Layout</p>
+                            </div>
+                            <p class="font-semibold">Layouts covers all theme configuration settings if you want to
+                                apply manually in project.</p>
+                            <div class="w-full mt-4 overflow-x-auto">
+                                <table class="w-full m-0 border whitespace-nowrap border-[#dee2e6]">
+                                    <thead>
+                                        <tr class="text-left">
+                                            <th class="p-3 border border-[#dee2e6]"
+                                                style="background-color: black; color: white;">Layout Name</th>
+                                            <th class="p-3 border border-[#dee2e6]"
+                                                style="background-color: black; color: white;">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code
+                                                    class="text-[#e83e8c]">Creative</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">You can set manually by adding
+                                                layout class from <code
+                                                    class="text-[#e83e8c]">&lt;body class="detached"&gt;</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]" style="background-color: #dbdad5;">
+                                                <code class="text-[#e83e8c]">Detached</code>
+                                            </td>
+                                            <td class="p-3 border border-[#dee2e6]" style="background-color: #dbdad5;">
+                                                You can set manually by adding layout class from <code
+                                                    class="text-[#e83e8c]">&lt;body class="detached detached-simple"&gt;</code>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="p-5 border rounded-md border-black/10" style="margin-top: 25px;" id="css">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">CSS</p>
+                            </div>
+                            <p class="font-semibold">Sliced Built with latest version of CSS3.</p>
+                            <div class="w-full mt-4 overflow-x-auto">
+                                <table class="w-full m-0 border whitespace-nowrap border-[#dee2e6]">
+                                    <thead>
+                                        <tr class="text-left">
+                                            <th class="p-3 border border-[#dee2e6]"
+                                                style="background-color: black; color: white;">File Name</th>
+                                            <th class="p-3 border border-[#dee2e6]"
+                                                style="background-color: black; color: white;">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code
+                                                    class="text-[#e83e8c]">css/style.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Tailwind CSS</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]" style="background-color: #dbdad5;">
+                                                <code class="text-[#e83e8c]">css/swiper-bundle.min.css</code>
+                                            </td>
+                                            <td class="p-3 border border-[#dee2e6]" style="background-color: #dbdad5;">
+                                                Swiper CSS</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code
+                                                    class="text-[#e83e8c]">css/fancybox.css</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Fancybox CSS</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]" style="background-color: #dbdad5;">
+                                                <code class="text-[#e83e8c]">css/accordion.min.css</code>
+                                            </td>
+                                            <td class="p-3 border border-[#dee2e6]" style="background-color: #dbdad5;">
+                                                Accordion CSS</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="p-5 border rounded-md border-black/10" style="margin-top: 25px;">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Javascript</p>
+                            </div>
+                            <p class="font-semibold">Sliced Built with Javascript</p>
+                            <div class="w-full mt-4 overflow-x-auto">
+                                <table class="w-full m-0 border whitespace-nowrap border-[#dee2e6]">
+                                    <thead>
+                                        <tr class="text-left">
+                                            <th class="p-3 border border-[#dee2e6]"
+                                                style="background-color: black; color: white;">File Name</th>
+                                            <th class="p-3 border border-[#dee2e6]"
+                                                style="background-color: black; color: white;">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code
+                                                    class="text-[#e83e8c]">js/alpine.min.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">Alpine js</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]" style="background-color: #dbdad5;">
+                                                <code class="text-[#e83e8c]">js/swiper-bundle.min.js</code>
+                                            </td>
+                                            <td class="p-3 border border-[#dee2e6]" style="background-color: #dbdad5;">
+                                                Swiper Js</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code
+                                                    class="text-[#e83e8c]">js/apexcharts.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">ApexCharts js</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]" style="background-color: #dbdad5;">
+                                                <code class="text-[#e83e8c]">js/fancybox.umd.js</code>
+                                            </td>
+                                            <td class="p-3 border border-[#dee2e6]" style="background-color: #dbdad5;">
+                                                Facncybox Js</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 border border-[#dee2e6]"><code
+                                                    class="text-[#e83e8c]">js/custom.js</code></td>
+                                            <td class="p-3 border border-[#dee2e6]">All Custom js files</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="p-5 border rounded-md border-black/10" style="margin-top: 25px;" id="cre">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Credit & Resources</p>
+                            </div>
+                            <p class="font-semibold">We have used the following plugins and packagies.</p>
+                            <div class="mt-3">
+                                <ul class="space-y-2 list-disc list-inside text-muted">
+
+                                    <li><a href="https://docs.djangoproject.com/en/5.0/">Django 5.0</a></li>
+                                    <li><a href="https://docs.allauth.org/en/latest/installation/quickstart.html">Django
+                                            Allauth 0.61.0</a></li>
+                                    <li><a href="https://www.google.com/search?client=firefox-b-d&q=google+console">Google
+                                            Auth Provider</a></li>
+                                    <li><a
+                                            href="https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app">Github
+                                            Auth Provider</a></li>
+                                    <li><a href="https://django-crispy-forms.readthedocs.io/en/latest/install.html">Crispy
+                                            Forms 2.1</a></li>
+                                    <li><a href="https://django-crispy-forms.readthedocs.io/en/1.11.1/install.html">Crispy
+                                            Tailwind </a></li>
+                                    <li><a href="https://tailwindcss.com/">Tailwind Css</a></li>
+                                    <li><a href="https://fancyapps.com/fancybox/getting-started/#cdn">Fancybox</a></li>
+                                    <li><a href="https://remixicon.com/">Remix Icons</a></li>
+                                    <li><a href="https://alpinejs.dev/">Alpine JS</a></li>
+                                    <li><a href="https://apexcharts.com/">ApexCharts Js</a></li>
+                                    <li><a href="https://unsplash.com/">Unsplash Images</a></li>
+                                    <li><a href="https://swiperjs.com/">Swiper Js</a></li>
+                                    <li><a href="https://github.com/michu2k/Accordion">Accordion Js</a></li>
+                                    <li><a href="https://uifaces.co/">Ui Faces</a></li>
+                                    <li><a href="https://dribbble.com/">Dribbble</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-5 border rounded-md border-black/10" style="margin-top: 25px;" id="support">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Support</p>
+                            </div>
+                            <div class="mt-3">
+                                <p>Thank you for become a part of us. If you have any query, suggestion and complain.
+                                    Contact us anytime.</p>
+                                <p class="mt-3 text-lg font-semibold text-black">- sup.srbthemes@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="p-5 border rounded-md border-black/10" style="margin-top: 25px;" id="change">
+                            <div class="mb-5">
+                                <p class="text-xl font-semibold text-black">Changelog</p>
+                            </div>
+
+                            <div>
+                                <h4 class="text-xl font-bold"><span class="text-purple">1.0.0</span> - 13 Feb 2024</h4>
+                                <h5 class="mt-4 font-bold">General</h5>
+                                <p class="mt-1 text-muted"><span
+                                        class="bg-purple h-2 w-2 mr-2 relative -top-[2px] rounded-full inline-block"></span>
+                                    Initial Released</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="flex items-center justify-between bg-white p-7">
+                    <p class="text-xs text-black">&copy; 2024 Sliced</p>
+                </footer>
+            </div>
+            <!-- End Content -->
+        </div>
+        <!-- End Content Area -->
+    </div>
+    <!-- End Main Content -->
+</body>
+
+</html>
