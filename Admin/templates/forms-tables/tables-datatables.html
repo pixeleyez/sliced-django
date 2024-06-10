@@ -3,6 +3,9 @@
 {% block title %} 
 {% include "partials/components/title-meta.html" with title="Datatables" %}
 {% endblock title %} 
+{% block css %}
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.tailwindcss.css">
+{% endblock css %}
 {% block content %}
 {% include "partials/components/page-heading.html" with title="Tables" subTitle="Datatables" %} 
     <!-- Start All Card -->
@@ -496,5 +499,11 @@
     <!-- End All Card -->
 {% endblock content %}
 {% block js %}
-<script type="module" src = {% static "/assets/js/main.js" %}></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.0.8/js/dataTables.tailwindcss.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src = {% static "/assets/js/pages/datatable.js" %}></script>
+<script src = {% static "/assets/js/main.js" %}></script>
+
 {% endblock js %}

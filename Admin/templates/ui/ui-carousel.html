@@ -3,6 +3,9 @@
 {% block title %} 
 {% include "partials/components/title-meta.html" with title="Carousel" %}
 {% endblock title %} 
+{% block css %}
+{% comment %} <link rel="stylesheet" href={% static "/assets/libs/swiper/swiper-bundle.min.css" %}> {% endcomment %}
+{% endblock css %}
 {% block content %}
 {% include "partials/components/page-heading.html" with title="Elements" subTitle="Carousel" %}
     <!-- Start All Card -->
@@ -12,11 +15,11 @@
                 <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Basic Carousel</h2>
                 <div class="swiper SwiperDefault" dir="ltr">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img {% static "/assets/images/images-1.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-2.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-3.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-4.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-5.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-1.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-2.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-3.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-4.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-5.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
                     </div>
                 </div>
             </div>
@@ -24,11 +27,11 @@
                 <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Basic Carousel With Arrow</h2>
                 <div class="swiper SwiperwithArrows" dir="ltr">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img {% static "/assets/images/images-6.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-7.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-2.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-4.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-5.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-6.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-7.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-2.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-4.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-5.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
                     </div>
                     <div class="text-white swiper-button-next"></div>
                     <div class="text-white swiper-button-prev"></div>
@@ -38,11 +41,11 @@
                 <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Basic Carousel With pagination</h2>
                 <div class="swiper SwiperwithPagination" dir="ltr">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img {% static "/assets/images/images-5.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-4.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-2.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-6.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-7.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-5.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-4.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-2.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-6.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-7.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -51,11 +54,11 @@
                 <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Basic Carousel With progress</h2>
                 <div class="swiper SwiperwithProgress" dir="ltr">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img {% static "/assets/images/images-4.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-3.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-2.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-6.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-7.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-4.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-3.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-2.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-6.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-7.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
                     </div>
                     <div class="text-white swiper-button-next"></div>
                     <div class="text-white swiper-button-prev"></div>
@@ -66,11 +69,11 @@
                 <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Basic Carousel With Multiple slides</h2>
                 <div class="swiper SwiperMultiple" dir="ltr">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img {% static "/assets/images/images-7.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-6.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-2.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-4.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
-                        <div class="swiper-slide"><img {% static "/assets/images/images-3.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-7.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-6.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-2.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-4.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
+                        <div class="swiper-slide"><img src = {% static "/assets/images/images-3.jpg" %} alt="slider" class="object-cover w-full max-h-96" /></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -84,5 +87,5 @@
 
 <script src = {% static "/assets/js/pages/carousel.init.js" %}></script>
 
-<script type="module" src = {% static "/assets/js/main.js" %}></script>
+<script src = {% static "/assets/js/main.js" %}></script>
 {% endblock js %}

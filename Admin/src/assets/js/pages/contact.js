@@ -10,7 +10,7 @@ File: contact init Js File
 
 // Initialize Alpine.js
 
- function contactsTable() {
+function contactsTable() {
     return {
         contacts: [],
         sortBy: '',
@@ -41,7 +41,7 @@ File: contact init Js File
             return Math.min(this.currentPage * this.itemsPerPage, this.contacts.length);
         },
         init() {
-            this.fetchData('assets/js/pages/json/contact.json');
+            this.fetchData('/static/assets/js/pages/json/contact.json');
         },
         fetchData(jsonPath) {
             fetch(jsonPath)
@@ -89,7 +89,7 @@ File: contact init Js File
             this.currentPage = page;
         }
     };
-  }
+}
 
 
 document.addEventListener('alpine:init', () => {

@@ -30,6 +30,9 @@ export default defineConfig({
         rollupOptions: {
             manualChunks: undefined,
             input: {
+                calendar: folder.src_assets + 'js/pages/calender.js',
+                sortable: folder.src_assets + 'js/pages/sortable.init.js',
+                flatpickr: folder.src_assets + 'js/pages/flatpickr.js',
                 icons: folder.src_assets + 'scss/icons.scss',
                 tailwind: folder.src_assets + 'scss/tailwind.scss',
                 pluginscustom: folder.src_assets + 'scss/plugins.scss',
@@ -37,15 +40,19 @@ export default defineConfig({
             },
             output: {
                 assetFileNames: (css) => {
-                    if (css.name.split('.').pop() == 'css') {
+                    const ext = css.name.split('.').pop();
+                    if (ext == 'css') {
                         return 'assets/css/' + `[name]` + '.css';
-                    } else if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(css.name.split('.').pop())) {
+                    } else if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext)) {
                         return 'assets/images/' + css.name;
                     } else {
                         return 'assets/css/' + css.name;
                     }
                 },
+                inlineDynamicImports: false,
+                format: 'cjs',
                 entryFileNames: 'assets/js/' + `[name]` + `.js`,
+
             },
             external: [
                 // Add any other external dependencies here
@@ -57,7 +64,6 @@ export default defineConfig({
                     targets: [
                         { src: folder.src_assets + 'images', dest: folder.dist_assets },
                         { src: folder.src_assets + 'js', dest: folder.dist_assets },
-                        { src: folder.src_assets + 'php', dest: folder.dist_assets },
                     ],
                 }),
                 {
@@ -89,6 +95,20 @@ export default defineConfig({
                             }
                         } catch (error) {
                             console.error('Error copying and renaming packages:', error);
+                        }
+                    },
+                },
+                {
+                    name: 'copy-fonts',
+                    apply: 'build',
+                    async generateBundle() {
+                        const srcDir = path.resolve(__dirname, folder.src_assets, 'fonts');
+                        const destDir = path.resolve(__dirname, folder.dist);
+
+                        for (const file of await fs.readdir(srcDir)) {
+                            if (file.endsWith('.woff') || file.endsWith('.woff2')) {
+                                await fs.copy(path.join(srcDir, file), path.join(destDir, file));
+                            }
                         }
                     },
                 },

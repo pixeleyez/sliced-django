@@ -1,24 +1,25 @@
 {% load static %} {% include "../components/main.html" %}
 <head>
-  {% block title %}{% endblock title %} {% include "../components/head-css.html" %}
+  {% block title %}{% endblock title %}
+  {% include "../components/head-css.html" %}
   {% block css %}{% endblock css %}
 </head>
 
 {% include "../components/body.html" %}
 
 <!-- Start Layout -->
-<div class="bg-[#f9fbfd] dark:bg-dark">
+<div class="bg-[#f9fbfd] dark:bg-dark min-h-screen relative z-10">
     <!-- Start detached bg -->
-    <div class="bg-[url('../images/bg-main.png')] bg-black min-h-[220px] sm:min-h-[250px] bg-bottom fixed hidden w-full -z-50 detached-img"></div>
+    <div class="bg-[url('/static/assets/images/bg-main.png')] bg-black dark:bg-purple min-h-[220px] sm:min-h-[50vh] bg-bottom w-full -z-10 absolute"></div>
     <!-- End detached bg -->
 
     <!-- Start Header -->
     <header>
         <nav class="px-4 lg:px-7 py-4 max-w-[1440px] mx-auto">
             <div class="flex flex-wrap items-center justify-between">
-                <a href="index.html" class="flex items-center">
-                    <img {% static "/assets/images/logo-light.svg" %} class="mx-auto dark-logo h-7 dark:hidden" alt="logo">
-                    <img {% static "/assets/images/light.svg" %} class="hidden mx-auto light-logo h-7 dark:block" alt="logo">
+                <a href="/" class="flex items-center">
+                    <img src = {% static "/assets/images/logo-light.svg" %} class="mx-auto dark-logo h-7 dark:hidden" alt="logo">
+                    <img src = {% static "/assets/images/light.svg" %} class="hidden mx-auto light-logo h-7 dark:block" alt="logo">
                 </a>
                 <div class="flex items-center lg:order-2">
                     <a href="signup.html" class="btn bg-purple dark:border-white dark:bg-white dark:text-black dark:hover:bg-white/90 border border-purple rounded-md text-white transition-all duration-300 hover:bg-purple/[0.85] hover:border-purple/[0.85]">Buy Now</a>
@@ -27,7 +28,7 @@
         </nav>
     </header>
     <!-- End Header -->
-
+    {% block content %}{% endblock content %}
     <!-- Start Footer -->
     <footer class="py-5 text-center text-black dark:text-white/80 max-w-[1440px] mx-auto">
         <div x-data="{ year: new Date().getFullYear() }">
@@ -45,3 +46,6 @@
     <!-- End Footer -->
 
 </div>
+
+{% include "../components/vendor-scripts.html" %}
+{% block js %}{% endblock js %}

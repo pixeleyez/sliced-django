@@ -1,0 +1,15 @@
+{% extends "partials/layouts/auth-layout.html" %}
+{% load static %}
+{% block title %}
+    {% include "partials/components/title-meta.html" with title="Login" %}
+{% endblock title %}
+{% load crispy_forms_tags %}
+{% load socialaccount %}
+
+{% block content %}
+
+{% endblock content%}
+
+{% block js %}
+    <script src = {% static "/assets/js/main.js" %}></script>
+{% endblock js %}

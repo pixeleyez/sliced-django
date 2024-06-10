@@ -3,7 +3,7 @@ const plugin = require('tailwindcss/plugin');
 module.exports = plugin(function ({ addComponents }) {
     addComponents({
         '.sidebar': {
-            '@apply fixed z-[10] flex-none w-[240px] ltr:border-r rtl:border-l dark:bg-darkborder border-black/10 transition-all duration-300 overflow-hidden transition-all duration-300': {},
+            '@apply fixed z-[9999] lg:z-[10] flex-none w-[240px] ltr:border-r rtl:border-l dark:bg-darkborder border-black/10 transition-all duration-300 overflow-hidden transition-all duration-300': {},
             //dark sidebar
             '@apply group-data-[sidebar=dark]/item:bg-darkborder group-data-[sidebar=dark]/item:border-darkborder group-data-[sidebar=brand]/item:border-sky-900': {},
 

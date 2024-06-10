@@ -1,7 +1,7 @@
 {% extends "partials/layouts/main-layout.html" %} 
 {% load static %} 
 {% block title %} 
-{% include "partials/components/title-meta.html" with title="Tabs" %}
+{% include "partials/components/title-meta.html" with title="Invoice" %}
 {% endblock title %} 
 {% block content %}
 {% include "partials/components/page-heading.html" with title="Apps" subTitle="Invoice" %} 
@@ -13,7 +13,7 @@
                             <div class="space-y-12">
                                 <div class="flex flex-wrap justify-between gap-4">
                                     <div class="flex items-center gap-2">
-                                        <img {% static "/assets/images/logo-icon.svg" %} class="w-12 h-12" alt="">
+                                        <img src = {% static "/assets/images/logo-icon.svg" %} class="w-12 h-12" alt="">
                                         <div>
                                             <h3 class="text-xl font-bold dark:text-white">Sliced Admin</h3>
                                             <p class="text-base text-muted dark:text-darkmuted">Hello@mail.com</p>
@@ -110,8 +110,8 @@
                                 </div>
                                 <div class="flex flex-wrap items-start justify-between gap-4">
                                     <div class="shrink-0">
-                                        <img {% static "/assets/images/logo-dark.svg" %} class="dark:hidden" alt="">
-                                        <img {% static "/assets/images/logo-light.svg" %} class="hidden dark:block" alt="">
+                                        <img src = {% static "/assets/images/logo-dark.svg" %} class="dark:hidden" alt="">
+                                        <img src = {% static "/assets/images/logo-light.svg" %} class="hidden dark:block" alt="">
                                     </div>
                                     <div class="flex flex-wrap gap-3 text-muted dark:text-darkmuted">
                                         <p class="max-w-[200px]">(408) 996–1010 support@gmail.com website.com</p>
@@ -132,5 +132,5 @@
                 </div>
 {% endblock %}
 {% block js %} 
-<script type="module" src = {% static "/assets/js/main.js" %}></script>
+<script src = {% static "/assets/js/main.js" %}></script>
 {% endblock %}

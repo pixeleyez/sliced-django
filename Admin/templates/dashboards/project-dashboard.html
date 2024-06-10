@@ -1,7 +1,7 @@
 {% extends "partials/layouts/main-layout.html" %} 
 {% load static %} 
 {% block title %} 
-{% include "partials/components/title-meta.html" with title="Tabs" %}
+{% include "partials/components/title-meta.html" with title="Project" %}
 {% endblock title %} 
 {% block content %}
     <div class="grid grid-cols-12 gap-4">
@@ -81,7 +81,7 @@
                             <a href="#!" class="block p-3 border rounded-md dark:border-darkborder border-black/10">
                                 <h6 class="mb-3 text-black truncate dark:text-white/80">Chat Application Design</h6>
                                 <div class="flex items-center gap-2">
-                                    <img {% static "/assets/images/avatar-20.png" %} alt="" class="rounded-full size-8">
+                                    <img src = {% static "/assets/images/avatar-20.png" %} alt="" class="rounded-full size-8">
                                     <div class="grow">
                                         <p class="text-xs text-muted">Assigned To</p>
                                         <h6 class="text-sm text-black dark:text-white/80">Natali Craig</h6>
@@ -91,7 +91,7 @@
                             <a href="#!" class="block p-3 border rounded-md dark:border-darkborder border-black/10">
                                 <h6 class="mb-3 text-black truncate dark:text-white/80">HR Management System</h6>
                                 <div class="flex items-center gap-2">
-                                    <img {% static "/assets/images/avatar-23.png" %} alt="" class="rounded-full size-8">
+                                    <img src = {% static "/assets/images/avatar-23.png" %} alt="" class="rounded-full size-8">
                                     <div class="grow">
                                         <p class="text-xs text-muted">Assigned To</p>
                                         <h6 class="text-sm text-black dark:text-white/80">Catherine</h6>
@@ -101,7 +101,7 @@
                             <a href="#!" class="block p-3 border rounded-md dark:border-darkborder border-black/10">
                                 <h6 class="mb-3 text-black truncate dark:text-white/80">Responsive Not Working</h6>
                                 <div class="flex items-center gap-2">
-                                    <img {% static "/assets/images/avatar-19.png" %} alt="" class="rounded-full size-8">
+                                    <img src = {% static "/assets/images/avatar-19.png" %} alt="" class="rounded-full size-8">
                                     <div class="grow">
                                         <p class="text-xs text-muted">Assigned To</p>
                                         <h6 class="text-sm text-black dark:text-white/80">Kate Morrison</h6>
@@ -111,7 +111,7 @@
                             <a href="#!" class="block p-3 border rounded-md dark:border-darkborder border-black/10">
                                 <h6 class="mb-3 text-black truncate dark:text-white/80">Redesign My Website</h6>
                                 <div class="flex items-center gap-2">
-                                    <img {% static "/assets/images/avatar-20.png" %} alt="" class="rounded-full size-8">
+                                    <img src = {% static "/assets/images/avatar-20.png" %} alt="" class="rounded-full size-8">
                                     <div class="grow">
                                         <p class="text-xs text-muted">Assigned To</p>
                                         <h6 class="text-sm text-black dark:text-white/80">Natali Craig</h6>
@@ -142,9 +142,9 @@
                                         <td>05 Feb, 2024 - 06 April, 2024</td>
                                         <td>
                                             <div class="flex items-center -space-x-2 rtl:space-x-reverse">
-                                                <a href="#!"><img {% static "/assets/images/avatar-27.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
-                                                <a href="#!"><img {% static "/assets/images/avatar-26.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
-                                                <a href="#!"><img {% static "/assets/images/avatar-20.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-27.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-26.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-20.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
                                                 <a href="#!">
                                                     <div class="flex items-center justify-center text-xs text-white border-2 border-white rounded-full dark:border-darklight bg-purple size-7">2+</div>
                                                 </a>
@@ -165,8 +165,8 @@
                                         <td>20 Feb, 2024 - 12 March, 2024</td>
                                         <td>
                                             <div class="flex items-center -space-x-2 rtl:space-x-reverse">
-                                                <a href="#!"><img {% static "/assets/images/avatar-10.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
-                                                <a href="#!"><img {% static "/assets/images/avatar-16.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-10.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-16.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
                                             </div>
                                         </td>
                                         <td>VueJs</td>
@@ -184,7 +184,7 @@
                                         <td>13 Aug, 2024 - 19 Oct, 2024</td>
                                         <td>
                                             <div class="flex items-center -space-x-2 rtl:space-x-reverse">
-                                                <a href="#!"><img {% static "/assets/images/avatar-2.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-2.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
                                             </div>
                                         </td>
                                         <td>PHP</td>
@@ -202,9 +202,9 @@
                                         <td>02 Jan, 2024 - 26 Feb, 2024</td>
                                         <td>
                                             <div class="flex items-center -space-x-2 rtl:space-x-reverse">
-                                                <a href="#!"><img {% static "/assets/images/avatar-19.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
-                                                <a href="#!"><img {% static "/assets/images/avatar-20.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
-                                                <a href="#!"><img {% static "/assets/images/avatar-18.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-19.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-20.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-18.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
                                             </div>
                                         </td>
                                         <td>VueJs + Laravel</td>
@@ -222,9 +222,9 @@
                                         <td>09 June, 2024 - 09 Oct, 2024</td>
                                         <td>
                                             <div class="flex items-center -space-x-2 rtl:space-x-reverse">
-                                                <a href="#!"><img {% static "/assets/images/avatar-8.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
-                                                <a href="#!"><img {% static "/assets/images/avatar-19.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
-                                                <a href="#!"><img {% static "/assets/images/avatar-16.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-8.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-19.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
+                                                <a href="#!"><img src = {% static "/assets/images/avatar-16.png" %} alt="" class="border-2 border-white rounded-full dark:border-darklight size-7"></a>
                                             </div>
                                         </td>
                                         <td>Asp.Net Core</td>
@@ -256,43 +256,43 @@
                 </div>
                 <div class="flex flex-col gap-3 h-[440px]  overflow-y-auto">
                     <div class="flex gap-2 ltr:mr-10 rtl:ml-10 ltr:[&.right]:mr-0 rtl:[&.right]:ml-0 ltr:[&.right]:ml-10 rtl:[&.right]:mr-10 group">
-                        <img {% static "/assets/images/avatar-14.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
+                        <img src = {% static "/assets/images/avatar-14.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
                         <div class="group-[&.right]:order-1 p-2 text-sm bg-gray-100 dark:bg-darkborder/50 dark:text-white/80 rounded-md ltr:group-[&.right]:text-right rtl:group-[&.right]:text-left">
                             <p>Hello, welcome to the SRBThemes thank you for visiting our website. How can we assist you?</p>
                         </div>
                     </div>
                     <div class="flex gap-2 ltr:mr-10 rtl:ml-10 ltr:[&.right]:mr-0 rtl:[&.right]:ml-0 ltr:[&.right]:ml-10 rtl:[&.right]:mr-10 group right">
-                        <img {% static "/assets/images/user.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
+                        <img src = {% static "/assets/images/user.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
                         <div class="group-[&.right]:order-1 p-2 text-sm bg-gray-100 dark:bg-darkborder/50 dark:text-white/80 rounded-md ltr:group-[&.right]:text-right rtl:group-[&.right]:text-left">
                             <p>Hello, I would like to mention that this chat may be recorded for the internal training process.</p>
                         </div>
                     </div>
                     <div class="flex gap-2 ltr:mr-10 rtl:ml-10 ltr:[&.right]:mr-0 rtl:[&.right]:ml-0 ltr:[&.right]:ml-10 rtl:[&.right]:mr-10 group">
-                        <img {% static "/assets/images/avatar-14.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
+                        <img src = {% static "/assets/images/avatar-14.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
                         <div class="group-[&.right]:order-1 p-2 text-sm bg-gray-100 dark:bg-darkborder/50 dark:text-white/80 rounded-md ltr:group-[&.right]:text-right rtl:group-[&.right]:text-left">
                             <p>May I request you to share your contact details?</p>
                         </div>
                     </div>
                     <div class="flex gap-2 ltr:mr-10 rtl:ml-10 ltr:[&.right]:mr-0 rtl:[&.right]:ml-0 ltr:[&.right]:ml-10 rtl:[&.right]:mr-10 group">
-                        <img {% static "/assets/images/avatar-14.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
+                        <img src = {% static "/assets/images/avatar-14.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
                         <div class="group-[&.right]:order-1 p-2 text-sm bg-gray-100 dark:bg-darkborder/50 dark:text-white/80 rounded-md ltr:group-[&.right]:text-right rtl:group-[&.right]:text-left">
                             <p>I can explain to you the installation steps of Sliced. Shall I go ahead?</p>
                         </div>
                     </div>
                     <div class="flex gap-2 ltr:mr-10 rtl:ml-10 ltr:[&.right]:mr-0 rtl:[&.right]:ml-0 ltr:[&.right]:ml-10 rtl:[&.right]:mr-10 group right">
-                        <img {% static "/assets/images/user.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
+                        <img src = {% static "/assets/images/user.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
                         <div class="group-[&.right]:order-1 p-2 text-sm bg-gray-100 dark:bg-darkborder/50 dark:text-white/80 rounded-md ltr:group-[&.right]:text-right rtl:group-[&.right]:text-left">
                             <p>What brings you to our website? What are you looking for? It will help us to serve you better.</p>
                         </div>
                     </div>
                     <div class="flex gap-2 ltr:mr-10 rtl:ml-10 ltr:[&.right]:mr-0 rtl:[&.right]:ml-0 ltr:[&.right]:ml-10 rtl:[&.right]:mr-10 group right">
-                        <img {% static "/assets/images/user.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
+                        <img src = {% static "/assets/images/user.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
                         <div class="group-[&.right]:order-1 p-2 text-sm bg-gray-100 dark:bg-darkborder/50 dark:text-white/80 rounded-md ltr:group-[&.right]:text-right rtl:group-[&.right]:text-left">
                             <p>It will just take a moment to go through the details – Can I put you on hold?</p>
                         </div>
                     </div>
                     <div class="flex gap-2 ltr:mr-10 rtl:ml-10 ltr:[&.right]:mr-0 rtl:[&.right]:ml-0 ltr:[&.right]:ml-10 rtl:[&.right]:mr-10 group">
-                        <img {% static "/assets/images/avatar-14.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
+                        <img src = {% static "/assets/images/avatar-14.png" %} alt="" class="group-[&.right]:order-2 rounded-full size-8 shrink-0">
                         <div class="group-[&.right]:order-1 p-2 text-sm bg-gray-100 dark:bg-darkborder/50 dark:text-white/80 rounded-md ltr:group-[&.right]:text-right rtl:group-[&.right]:text-left">
                             <p>I would like to recommend a “solution” that fits your requirements.</p>
                         </div>
@@ -310,7 +310,7 @@
                     <li>
                         <div class="flex items-center gap-3">
                             <div class="relative rounded-full shrink-0">
-                                <img {% static "/assets/images/avatar-2.png" %} alt="" class="rounded-full size-9">
+                                <img src = {% static "/assets/images/avatar-2.png" %} alt="" class="rounded-full size-9">
                                 <span class="inline-block size-2 bg-success rounded-full absolute ltr:right-0.5 rtl:left-0.5 bottom-[1px] border border-white"></span>
                             </div>
                             <div class="grow">
@@ -336,7 +336,7 @@
                     <li>
                         <div class="flex items-center gap-3">
                             <div class="relative rounded-full shrink-0">
-                                <img {% static "/assets/images/avatar-5.png" %} alt="" class="rounded-full size-9">
+                                <img src = {% static "/assets/images/avatar-5.png" %} alt="" class="rounded-full size-9">
                                 <span class="inline-block size-2 bg-danger rounded-full absolute ltr:right-0.5 rtl:left-0.5 bottom-[1px] border border-white"></span>
                             </div>
                             <div class="grow">
@@ -362,7 +362,7 @@
                     <li>
                         <div class="flex items-center gap-3">
                             <div class="relative rounded-full shrink-0">
-                                <img {% static "/assets/images/avatar-6.png" %} alt="" class="rounded-full size-9">
+                                <img src = {% static "/assets/images/avatar-6.png" %} alt="" class="rounded-full size-9">
                                 <span class="inline-block size-2 bg-success rounded-full absolute ltr:right-0.5 rtl:left-0.5 bottom-[1px] border border-white"></span>
                             </div>
                             <div class="grow">
@@ -388,7 +388,7 @@
                     <li>
                         <div class="flex items-center gap-3">
                             <div class="relative rounded-full shrink-0">
-                                <img {% static "/assets/images/avatar-8.png" %} alt="" class="rounded-full size-9">
+                                <img src = {% static "/assets/images/avatar-8.png" %} alt="" class="rounded-full size-9">
                                 <span class="inline-block size-2 bg-success rounded-full absolute ltr:right-0.5 rtl:left-0.5 bottom-[1px] border border-white"></span>
                             </div>
                             <div class="grow">
@@ -414,7 +414,7 @@
                     <li>
                         <div class="flex items-center gap-3">
                             <div class="relative rounded-full shrink-0">
-                                <img {% static "/assets/images/avatar-9.png" %} alt="" class="rounded-full size-9">
+                                <img src = {% static "/assets/images/avatar-9.png" %} alt="" class="rounded-full size-9">
                                 <span class="inline-block size-2 bg-danger rounded-full absolute ltr:right-0.5 rtl:left-0.5 bottom-[1px] border border-white"></span>
                             </div>
                             <div class="grow">
@@ -476,5 +476,5 @@
 {% block js %}
 <script  src = {%static "/assets/libs/apexcharts/apexcharts.min.js" %}></script>
 <script  src = {%static "/assets/js/pages/project-dashboard.js" %}></script>
-<script type="module" src = {% static "/assets/js/main.js" %}></script>
+<script src = {% static "/assets/js/main.js" %}></script>
 {% endblock js %}

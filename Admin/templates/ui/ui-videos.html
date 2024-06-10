@@ -30,5 +30,6 @@
     </div>
     <!-- End All Card -->
 {% endblock content %}
-<script type="module" src = {% static "/assets/js/main.js" %}></script>
+{% block js %}
+<script src = {% static "/assets/js/main.js" %}></script>
 {% endblock %}

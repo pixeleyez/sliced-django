@@ -1,10 +1,10 @@
 {% extends "partials/layouts/main-layout.html" %} 
 {% load static %} 
 {% block title %} 
-{% include "partials/components/title-meta.html" with title="Tabs" %}
+{% include "partials/components/title-meta.html" with title="ECommerce Dashboard" %}
 {% endblock title %} 
 {% block content %}
-    {% include "partials/components/page-heading.html" with title="Sliced" subTitle="eCommerce Dashboard" %}
+    {% include "partials/components/page-heading.html" with title="Sliced" subTitle="ECommerce Dashboard" %}
     <!-- Start All Card -->
     <div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -215,7 +215,7 @@
                 <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Most Selling Products</h2>
                 <div class="flex flex-col gap-3">
                     <div class="flex gap-2 p-3 bg-gray-100 rounded-md dark:bg-darkborder/50">
-                        <img {% static "/assets/images/product-1.png" %} alt="" class="size-10 shrink-0">
+                        <img src = {% static "/assets/images/product-1.png" %} alt="" class="size-10 shrink-0">
                         <div class="overflow-hidden grow">
                             <h6 class="mb-1 text-black capitalize truncate dark:text-white/80"><a href="#!">Elegance color apparel clothes clothing</a></h6>
                             <ul class="flex items-center gap-3 text-xs text-muted">
@@ -226,7 +226,7 @@
                         <h6 class="font-bold text-black rtl:float-left ltr:float-right dark:text-white/80">$49.99</h6>
                     </div>
                     <div class="flex gap-2 p-3 bg-gray-100 rounded-md dark:bg-darkborder/50">
-                        <img {% static "/assets/images/product-2.png" %} alt="" class="size-10 shrink-0">
+                        <img src = {% static "/assets/images/product-2.png" %} alt="" class="size-10 shrink-0">
                         <div class="overflow-hidden grow">
                             <h6 class="mb-1 text-black capitalize truncate dark:text-white/80"><a href="#!">Graphic tshirt trendy</a></h6>
                             <ul class="flex items-center gap-3 text-xs text-muted">
@@ -237,7 +237,7 @@
                         <h6 class="font-bold text-black rtl:float-left ltr:float-right dark:text-white/80">$85.77</h6>
                     </div>
                     <div class="flex gap-2 p-3 bg-gray-100 rounded-md dark:bg-darkborder/50">
-                        <img {% static "/assets/images/product-3.png" %} alt="" class="size-10 shrink-0">
+                        <img src = {% static "/assets/images/product-3.png" %} alt="" class="size-10 shrink-0">
                         <div class="overflow-hidden grow">
                             <h6 class="mb-1 text-black capitalize truncate dark:text-white/80"><a href="#!">Simple Gray t-shirt</a></h6>
                             <ul class="flex items-center gap-3 text-xs text-muted">
@@ -248,7 +248,7 @@
                         <h6 class="font-bold text-black rtl:float-left ltr:float-right dark:text-white/80">$73.22</h6>
                     </div>
                     <div class="flex gap-2 p-3 bg-gray-100 rounded-md dark:bg-darkborder/50">
-                        <img {% static "/assets/images/product-4.png" %} alt="" class="size-10 shrink-0">
+                        <img src = {% static "/assets/images/product-4.png" %} alt="" class="size-10 shrink-0">
                         <div class="overflow-hidden grow">
                             <h6 class="mb-1 text-black capitalize truncate dark:text-white/80"><a href="#!">Modern minimal headphone</a></h6>
                             <ul class="flex items-center gap-3 text-xs text-muted">
@@ -259,7 +259,7 @@
                         <h6 class="font-bold text-black rtl:float-left ltr:float-right dark:text-white/80">$164.20</h6>
                     </div>
                     <div class="flex gap-2 p-3 bg-gray-100 rounded-md dark:bg-darkborder/50">
-                        <img {% static "/assets/images/product-5.png" %} alt="" class="size-10 shrink-0">
+                        <img src = {% static "/assets/images/product-5.png" %} alt="" class="size-10 shrink-0">
                         <div class="overflow-hidden grow">
                             <h6 class="mb-1 text-black capitalize truncate dark:text-white/80"><a href="#!">Top view cap</a></h6>
                             <ul class="flex items-center gap-3 text-xs text-muted">
@@ -278,5 +278,5 @@
 {% block js %}
 <script  src = {%static "/assets/libs/apexcharts/apexcharts.min.js" %}></script>
 <script  src = {%static "/assets/js/pages/ecommerce-dashboard.js" %}></script>
-<script type="module" src = {% static "/assets/js/main.js" %}></script>
+<script src = {% static "/assets/js/main.js" %}></script>
 {% endblock js %}

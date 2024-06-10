@@ -4,9 +4,9 @@
     <div class="h-full bg-white dark:bg-darklight group-data-[sidebar=dark]/item:bg-darklight group-data-[sidebar=brand]/item:bg-sky-950">
         <div class="p-4">
             <a href="index" class="w-full main-logo">
-                <img {% static "/assets/images/logo-dark.svg" %} class="mx-auto dark-logo h-7 logo dark:hidden group-data-[sidebar=dark]/item:hidden group-data-[sidebar=brand]/item:hidden" alt="logo" />
-                <img {% static "/assets/images/logo-light.svg" %} class="hidden mx-auto light-logo h-7 logo dark:block group-data-[sidebar=dark]/item:block group-data-[sidebar=brand]/item:block" alt="logo" />
-                <img {% static "/assets/images/logo-icon.svg" %} class="hidden mx-auto logo-icon h-7" alt="">
+                <img src = {% static "/assets/images/logo-dark.svg" %} class="mx-auto dark-logo h-7 logo dark:hidden group-data-[sidebar=dark]/item:hidden group-data-[sidebar=brand]/item:hidden" alt="logo" />
+                <img src = {% static "/assets/images/logo-light.svg" %} class="hidden mx-auto light-logo h-7 logo dark:block group-data-[sidebar=dark]/item:block group-data-[sidebar=brand]/item:block" alt="logo" />
+                <img src = {% static "/assets/images/logo-icon.svg" %} class="hidden mx-auto logo-icon h-7" alt="">
             </a>
         </div>
         <div class="h-[calc(100vh-60px)]  overflow-y-auto overflow-x-hidden px-5 pb-4 space-y-16 detached-menu"  >
@@ -70,17 +70,17 @@
                         </div>
                     </a>
                     <ul x-cloak x-show="isActive('components')" x-collapse class="flex flex-col gap-1 text-black sub-menu dark:text-white/60 group-data-[sidebar=dark]/item:text-white/60 group-data-[sidebar=brand]/item:text-sky-200/50">
-                        <li><a href="/ui-tabs">tabs</a></li>
-                        <li><a href="/ui-accordions">accordions</a></li>
-                        <li><a href="/ui-modals">modals</a></li>
-                        <li><a href="/ui-clipboard">clipboard</a></li>
-                        <li><a href="/ui-notification">Notification</a></li>
-                        <li><a href="/ui-carousel">carousel</a></li>
-                        <li><a href="/ui-pricing">pricing</a></li>
-                        <li><a href="/ui-lightbox">lightbox</a></li>
-                        <li><a href="/ui-countdown">Countdown</a></li>
-                        <li><a href="/ui-counter">Counter</a></li>
-                        <li><a href="/ui-flatpickr">Flatpickr <span class="inline-block px-2 py-1 text-xs leading-none text-pink-500 rounded bg-pink-500/10 ltr:ml-3 rtl:mr-3">New</span></a></li>
+                        <li><a href="/ui/ui-tabs">tabs</a></li>
+                        <li><a href="/ui/ui-accordions">accordions</a></li>
+                        <li><a href="/ui/ui-modals">modals</a></li>
+                        <li><a href="/ui/ui-clipboard">clipboard</a></li>
+                        <li><a href="/ui/ui-notification">Notification</a></li>
+                        <li><a href="/ui/ui-carousel">carousel</a></li>
+                        <li><a href="/ui/ui-pricing">pricing</a></li>
+                        <li><a href="/ui/ui-lightbox">lightbox</a></li>
+                        <li><a href="/ui/ui-countdown">Countdown</a></li>
+                        <li><a href="/ui/ui-counter">Counter</a></li>
+                        <li><a href="/ui/ui-flatpickr">Flatpickr <span class="inline-block px-2 py-1 text-xs leading-none text-pink-500 rounded bg-pink-500/10 ltr:ml-3 rtl:mr-3">New</span></a></li>
                     </ul>
                 </li>
                 <li class="menu nav-item">
@@ -98,24 +98,24 @@
                         </div>
                     </a>
                     <ul x-cloak x-show="isActive('elements')" x-collapse class="flex flex-col gap-1 text-black sub-menu dark:text-white/60 group-data-[sidebar=dark]/item:text-white/60 group-data-[sidebar=brand]/item:text-sky-200/50">
-                        <li><a href="/ui-alerts">Alerts</a></li>
-                        <li><a href="/ui-buttons">Buttons</a></li>
-                        <li><a href="/ui-buttons-group">buttons group</a></li>
-                        <li><a href="/ui-badge">badge</a></li>
-                        <li><a href="/ui-breadcrumb">breadcrumb</a></li>
-                        <li><a href="/ui-videos">videos</a></li>
-                        <li><a href="/ui-images">Images</a></li>
-                        <li><a href="/ui-dropdowns">dropdowns</a></li>
-                        <li><a href="/ui-typography">typography</a></li>
-                        <li><a href="/ui-avatar">Avatar</a></li>
-                        <li><a href="/ui-tooltips">tooltips</a></li>
-                        <li><a href="/ui-loader">loader</a></li>
-                        <li><a href="/ui-pagination">pagination</a></li>
-                        <li><a href="/ui-progress-bar">progress bar</a></li>
+                        <li><a href="/ui/ui-alerts">Alerts</a></li>
+                        <li><a href="/ui/ui-buttons">Buttons</a></li>
+                        <li><a href="/ui/ui-buttons-group">buttons group</a></li>
+                        <li><a href="/ui/ui-badge">badge</a></li>
+                        <li><a href="/ui/ui-breadcrumb">breadcrumb</a></li>
+                        <li><a href="/ui/ui-videos">videos</a></li>
+                        <li><a href="/ui/ui-images">Images</a></li>
+                        <li><a href="/ui/ui-dropdowns">dropdowns</a></li>
+                        <li><a href="/ui/ui-typography">typography</a></li>
+                        <li><a href="/ui/ui-avatar">Avatar</a></li>
+                        <li><a href="/ui/ui-tooltips">tooltips</a></li>
+                        <li><a href="/ui/ui-loader">loader</a></li>
+                        <li><a href="/ui/ui-pagination">pagination</a></li>
+                        <li><a href="/ui/ui-progress-bar">progress bar</a></li>
                     </ul>
                 </li>
                 <li class="menu nav-item">
-                    <a href="chart" class="nav-link group" :class="{'active' : isActive('chart')}">
+                    <a href="/chart" class="nav-link group" :class="{'active' : isActive('chart')}">
                         <div class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5">
                                 <path d="M9 2.4578V4.58152C6.06817 5.76829 4 8.64262 4 12C4 16.4183 7.58172 20 12 20C15.3574 20 18.2317 17.9318 19.4185 15H21.5422C20.2679 19.0571 16.4776 22 12 22C6.47715 22 2 17.5228 2 12C2 7.52236 4.94289 3.73207 9 2.4578ZM12 2C17.5228 2 22 6.47715 22 12C22 12.3375 21.9833 12.6711 21.9506 13H11V2.04938C11.3289 2.01672 11.6625 2 12 2ZM13 4.06189V11H19.9381C19.4869 7.38128 16.6187 4.51314 13 4.06189Z" fill="currentColor"></path>
@@ -125,7 +125,7 @@
                     </a>
                 </li>
                 <li class="menu nav-item">
-                    <a href="icons" class="nav-link group" :class="{'active' : isActive('icons')}">
+                    <a href="/icons" class="nav-link group" :class="{'active' : isActive('icons')}">
                         <div class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5">
                                 <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C13.4702 20 14.8478 19.6034 16.0316 18.9114L15.0237 17.1835C14.1359 17.7026 13.1027 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12V13C18 13.5523 17.5523 14 17 14C16.4477 14 16 13.5523 16 13V9H14.6458C13.9407 8.37764 13.0144 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C13.0465 16 13.9991 15.5982 14.7119 14.9404C15.2622 15.5886 16.0831 16 17 16C18.6569 16 20 14.6569 20 13V12ZM12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10Z" fill="currentColor"></path>
@@ -135,12 +135,12 @@
                     </a>
                 </li>
                 <li class="menu nav-item">
-                    <a href="drag-and-drop" class="nav-link group" :class="{'active' : isActive('drag')}">
+                    <a href="/drag-and-drop" class="nav-link group" :class="{'active' : isActive('drag')}">
                         <div class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5">
                                 <path d="M12 2L16.2426 6.24264L14.8284 7.65685L12 4.82843L9.17157 7.65685L7.75736 6.24264L12 2ZM2 12L6.24264 7.75736L7.65685 9.17157L4.82843 12L7.65685 14.8284L6.24264 16.2426L2 12ZM22 12L17.7574 16.2426L16.3431 14.8284L19.1716 12L16.3431 9.17157L17.7574 7.75736L22 12ZM12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14ZM12 22L7.75736 17.7574L9.17157 16.3431L12 19.1716L14.8284 16.3431L16.2426 17.7574L12 22Z" fill="currentColor"></path>
                             </svg>
-                            <span class="ltr:pl-1.5 rtl:pr-1.5">drag & drop</span>
+                            <span class="ltr:pl-1.5 rtl:pr-1.5">Drag & Drop</span>
                         </div>
                     </a>
                 </li>
@@ -160,13 +160,13 @@
                         </div>
                     </a>
                     <ul x-cloak x-show="isActive('forms')" x-collapse class="flex flex-col gap-1 text-black sub-menu dark:text-white/60 group-data-[sidebar=dark]/item:text-white/60 group-data-[sidebar=brand]/item:text-sky-200/50">
-                        <li><a href="/forms-basic">Basic</a></li>
-                        <li><a href="/forms-input-group">Input Group</a></li>
-                        <li><a href="/forms-editors">Editors</a></li>
-                        <li><a href="/forms-validation">Validation</a></li>
-                        <li><a href="/forms-checkbox">Checkbox</a></li>
-                        <li><a href="/forms-radio">Radio</a></li>
-                        <li><a href="/forms-switches">Switches</a></li>
+                        <li><a href="/form-table/forms-basic">Basic</a></li>
+                        <li><a href="/form-table/forms-input-group">Input Group</a></li>
+                        <li><a href="/form-table/forms-editors">Editors</a></li>
+                        <li><a href="/form-table/forms-validation">Validation</a></li>
+                        <li><a href="/form-table/forms-checkbox">Checkbox</a></li>
+                        <li><a href="/form-table/forms-radio">Radio</a></li>
+                        <li><a href="/form-table/forms-switches">Switches</a></li>
                     </ul>
                 </li>
                 <li class="menu nav-item">
@@ -184,9 +184,9 @@
                         </div>
                     </a>
                     <ul x-cloak x-show="isActive('table')" x-collapse class="flex flex-col gap-1 text-black sub-menu dark:text-white/60 group-data-[sidebar=dark]/item:text-white/60 group-data-[sidebar=brand]/item:text-sky-200/50">
-                        <li><a href="/tables-basic">Basic</a></li>
-                        <li><a href="/tables-datatables">datatables</a></li>
-                        <li><a href="/tables-editable">editable</a></li>
+                        <li><a href="/form-table/tables-basic">Basic</a></li>
+                        <li><a href="/form-table/tables-datatables">datatables</a></li>
+                        <li><a href="/form-table/tables-editable">editable</a></li>
                     </ul>
                 </li>
                 <h2 class="my-2 text-sm text-black/50 dark:text-white/30 group-data-[sidebar=dark]/item:text-white/30 group-data-[sidebar=brand]/item:text-sky-200/50"><span>Users & Pages</span></h2>
@@ -205,8 +205,8 @@
                         </div>
                     </a>
                     <ul x-cloak x-show="isActive('users')" x-collapse class="flex flex-col gap-1 text-black sub-menu dark:text-white/60 group-data-[sidebar=dark]/item:text-white/60 group-data-[sidebar=brand]/item:text-sky-200/50">
-                        <li><a href="pages-users-profile">Profile</a></li>
-                        <li><a href="pages-users-settings">Settings</a></li>
+                        <li><a href="/user/pages-users-profile">Profile</a></li>
+                        <li><a href="/user/pages-users-settings">Settings</a></li>
                     </ul>
                 </li>
                 <li class="menu nav-item">
@@ -224,12 +224,12 @@
                         </div>
                     </a>
                     <ul x-cloak x-show="isActive('pages')" x-collapse class="flex flex-col gap-1 text-black sub-menu dark:text-white/60 group-data-[sidebar=dark]/item:text-white/60 group-data-[sidebar=brand]/item:text-sky-200/50">
-                        <li><a href="/blank">Starter Page</a></li>
-                        <li><a href="/pages-maintenance">maintenance</a></li>
-                        <li><a href="/pages-coming-soon">coming soon</a></li>
-                        <li><a href="/pages-404">404 Error</a></li>
-                        <li><a href="/pages-500">500 Error</a></li>
-                        <li><a href="/pages-503">503 Error</a></li>
+                        <li><a href="/page/blank">Starter Page</a></li>
+                        <li><a href="/page/pages-maintenance">maintenance</a></li>
+                        <li><a href="/page/pages-coming-soon">coming soon</a></li>
+                        <li><a href="/page/pages-404">404 Error</a></li>
+                        <li><a href="/page/pages-500">500 Error</a></li>
+                        <li><a href="/page/pages-503">503 Error</a></li>
                     </ul>
                 </li>
                 <li class="menu nav-item">
@@ -247,8 +247,8 @@
                         </div>
                     </a>
                     <ul x-cloak x-show="isActive('layout')" x-collapse class="flex flex-col gap-1 text-black sub-menu dark:text-white/60 group-data-[sidebar=dark]/item:text-white/60 group-data-[sidebar=brand]/item:text-sky-200/50">
-                        <li><a href="/creative" >Creative Detached</a></li>
-                        <li><a href="/detached">Detached</a></li>
+                        <li><a href="/layout/creative" >Creative Detached</a></li>
+                        <li><a href="/layout/detached">Detached</a></li>
                     </ul>
                 </li>
                 <li class="menu nav-item">
@@ -266,9 +266,9 @@
                         </div>
                     </a>
                     <ul x-cloak  x-show="isActive('authentication')" x-collapse  class="flex flex-col gap-1 text-black sub-menu dark:text-white/60 group-data-[sidebar=dark]/item:text-white/60 group-data-[sidebar=brand]/item:text-sky-200/50">
-                        <li><a href="/login" :class="{'active' : isActive('authentication')}">Sign In</a></li>
-                        <li><a href="/signup" :class="{'active' : isActive('authentication')}">Sign Up</a></li>
-                        <li><a href="/reset-pw" :class="{'active' : isActive('authentication')}">Reset Password</a></li>
+                        <li><a href="/authentication/login" :class="{'active' : isActive('authentication')}">Sign In</a></li>
+                        <li><a href="/authentication/signup" :class="{'active' : isActive('authentication')}">Sign Up</a></li>
+                        <li><a href="/authentication/reset-pw" :class="{'active' : isActive('authentication')}">Reset Password</a></li>
                     </ul>
                 </li>
                 <h2 class="my-2 text-sm text-black/50 dark:text-white/30 group-data-[sidebar=dark]/item:text-white/30 group-data-[sidebar=brand]/item:text-sky-200/50"><span>Supports</span></h2>

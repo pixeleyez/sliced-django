@@ -1,0 +1,52 @@
+{% extends "partials/layouts/main-layout.html" %} 
+{% load static %} 
+{% block title %} 
+{% include "partials/components/title-meta.html" with title="Chart" %}
+{% endblock title %} 
+{% block content %}
+{% include "partials/components/page-heading.html" with title="Elements" subTitle="Chart" %}
+    <!-- Start All Card -->
+    <div class="flex flex-col gap-4 min-h-[calc(100vh-212px)]">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <div class="p-5 bg-white border rounded border-black/10 dark:bg-darklight dark:border-darkborder">
+                <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Line Chart</h2>
+                <div id="linechart" dir="ltr"></div>
+            </div>
+            <div class="p-5 bg-white border rounded border-black/10 dark:bg-darklight dark:border-darkborder">
+                <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Area Chart</h2>
+                <div id="areachart" dir="ltr"></div>
+            </div>
+            <div class="p-5 bg-white border rounded border-black/10 dark:bg-darklight dark:border-darkborder">
+                <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Bar Chart</h2>
+                <div id="barchart" dir="ltr"></div>
+            </div>
+            <div class="p-5 bg-white border rounded border-black/10 dark:bg-darklight dark:border-darkborder">
+                <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Simple Bar</h2>
+                <div id="simplebarchart" dir="ltr"></div>
+            </div>
+            <div class="p-5 bg-white border rounded border-black/10 dark:bg-darklight dark:border-darkborder">
+                <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Bar Chart</h2>
+                <div id="barchartcenter" dir="ltr"></div>
+            </div>
+            <div class="p-5 bg-white border rounded border-black/10 dark:bg-darklight dark:border-darkborder">
+                <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Spline Area Charts</h2>
+                <div id="apex_area1" dir="ltr"></div>
+            </div>
+            <div class="p-5 bg-white border rounded border-black/10 dark:bg-darklight dark:border-darkborder">
+                <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Basic Donut</h2>
+                <div id="basicbonut" dir="ltr"></div>
+            </div>
+            <div class="p-5 bg-white border rounded border-black/10 dark:bg-darklight dark:border-darkborder">
+                <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Doughnut chart</h2>
+                <div id="doughnutchart" dir="ltr"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Card -->
+{% endblock content %}
+{% block js %}
+<script  src = {%static "/assets/libs/apexcharts/apexcharts.js" %}></script>
+<script  src = {%static "/assets/js/pages/apex.init.js" %}></script>
+
+<script src = {% static "/assets/js/main.js" %}></script>
+{% endblock %}

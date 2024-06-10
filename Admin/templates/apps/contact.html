@@ -1,7 +1,7 @@
 {% extends "partials/layouts/main-layout.html" %} 
 {% load static %} 
 {% block title %} 
-{% include "partials/components/title-meta.html" with title="Tabs" %}
+{% include "partials/components/title-meta.html" with title="Contact" %}
 {% endblock title %} 
 {% block content %}
 {% include "partials/components/page-heading.html" with title="Apps" subTitle="Contact" %} 
@@ -44,11 +44,11 @@
                     </div>
                 </template>
             </div>
-            <div class="grid grid-cols-12 gap-5 mt-5">
-                <div class="col-span-6">
+            <div class="grid lg:grid-cols-12 grid-row-1 gap-5 mt-5">
+                <div class="lg:col-span-6 ">
                     <p class="text-gray-500">Showing <b x-text="showingStart"></b> - <b x-text="showingEnd"></b> of <b x-text="contacts.length"></b> Results</p>
                 </div>
-                <div class="col-span-6">
+                <div class="lg:col-span-6  ">
                     <div class="flex items-center justify-end gap-2">
                         <button @click="prevPage()" :disabled="currentPage === 1" class="flex justify-center px-3.5 py-2 rounded transition text-muted hover:text-purple border border-black/10 hover:border-purple dark:border-darkborder dark:text-darkmuted dark:hover:text-purple dark:hover:border-purple cursor-pointer">
                             <i class="mr-1 ri-arrow-left-s-line"></i> Prev
@@ -68,6 +68,6 @@
     </div>
 {% endblock %}
 {% block js %} 
-    <script type="module" src = {% static "/assets/js/pages/contact.js" %}></script>
-    <script type="module" src = {% static "/assets/js/main.js" %}></script>
+    <script src = {% static "/assets/js/pages/contact.js" %}></script>
+    <script src = {% static "/assets/js/main.js" %}></script>
 {% endblock %}

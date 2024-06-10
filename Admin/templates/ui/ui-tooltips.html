@@ -40,10 +40,10 @@
     <!-- End All Card -->
 {% endblock content %}
 {% block js %}
-<script src = {% static "/assets/libs/@popperjs/umd/popper.min.js" %}></script>
+<script src = {% static "/assets/libs/@popperjs/core/umd/popper.min.js" %}></script>
 <script src = {% static "/assets/libs/tippy.js/tippy-bundle.umd.min.js" %}></script>
 
-<script type="module" src = {% static "/assets/js/pages/tooltips.init.js" %}></script>
+<script src = {% static "/assets/js/pages/tooltips.init.js" %}></script>
 
-<script type="module" src = {% static "/assets/js/main.js" %}></script>
+<script src = {% static "/assets/js/main.js" %}></script>
 {% endblock js %}

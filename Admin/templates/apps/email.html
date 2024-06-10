@@ -1,7 +1,7 @@
 {% extends "partials/layouts/main-layout.html" %} 
 {% load static %} 
 {% block title %} 
-{% include "partials/components/title-meta.html" with title="Tabs" %}
+{% include "partials/components/title-meta.html" with title="Email" %}
 {% endblock title %} 
 {% block content %}
 {% include "partials/components/page-heading.html" with title="Apps" subTitle="Email" %} 
@@ -239,7 +239,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/avatar-6.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/avatar-6.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">Natali Craig</p>
                                             <p class="text-xs text-muted line-clamp-1">Are you free tonight?</p>
@@ -259,7 +259,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/slack.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/slack.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">Slack</p>
                                             <p class="text-xs text-muted line-clamp-1">Invite your team to Slack</p>
@@ -279,7 +279,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/avatar-7.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/avatar-7.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">Drew Cano</p>
                                             <p class="text-xs text-muted line-clamp-1">Let's go fishing! - Hey, You wanna join me and Fred at the lake tomorrow? It'll be awesome.</p>
@@ -299,7 +299,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/avatar-8.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/avatar-8.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">Orlando Diggs</p>
                                             <p class="text-xs text-muted line-clamp-1">Hey man – Nah man sorry i don't. Should i get it?</p>
@@ -319,7 +319,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/behance.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/behance.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">Behance</p>
                                             <p class="text-xs text-muted line-clamp-1">You have a new follower</p>
@@ -339,7 +339,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/chatgpt.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/chatgpt.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">ChatGPT</p>
                                             <p class="text-xs text-muted line-clamp-1">Welcome to ChatGPT</p>
@@ -367,7 +367,7 @@
                             </div>
                             <div class="flex flex-wrap items-start justify-between gap-3 px-4 py-2 border-b bg-light/20 border-black/10 dark:border-darkborder dark:bg-white/5">
                                 <div class="flex items-start flex-1 gap-2 p-1">
-                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/slack.svg" %} alt="" />
+                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/slack.svg" %} alt="" />
                                     <div class="flex-1 ltr:text-left rtl:text-right">
                                         <p class="dark:text-white">Slack <span class="text-muted">|</span> no-reply@email.slackhq.com</p>
                                         <p class="text-xs text-muted dark:text-darkmuted">Today, 18:30</p>
@@ -404,11 +404,11 @@
                             </div>
                             <div class="rounded pt-10 md:h-[calc(100vh-312px)] overflow-y-auto">
                                 <div class="px-10 pb-10">
-                                    <img {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
+                                    <img src = {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
                                     <h3 class="text-2xl font-semibold text-black dark:text-white mb-7">Invite your team</h3>
                                     <p class="mb-7 dark:text-darkmuted">Slack is most useful when your whole team can join the conversation. Try adding people to Sliced Admin Community to start being more productive together!</p>
                                     <a href="javaScript:;" class="btn bg-black dark:bg-white dark:text-black dark:border-white dark:hover:bg-white/85 dark:hover:border-white/85 border border-black rounded-md text-white transition-all duration-300 hover:bg-black/[0.85] hover:border-black/[0.85] inline-block mb-7">Invite People</a>
-                                    <img {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
+                                    <img src = {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
                                     <div class="flex flex-col items-center justify-between gap-6 lg:flex-row mb-7">
                                         <div class="flex items-start flex-1 gap-2 p-1">
                                             <img class="flex-none object-cover w-10 h-10 overflow-hidden rounded-full" {% static "/assets/images/logo-icon.svg" %} alt="" />
@@ -474,7 +474,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/chatgpt.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/chatgpt.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">ChatGPT</p>
                                             <p class="text-xs text-muted line-clamp-1">Welcome to ChatGPT</p>
@@ -502,7 +502,7 @@
                             </div>
                             <div class="flex flex-wrap items-start justify-between gap-3 px-4 py-2 border-b bg-light/20 border-black/10 dark:border-darkborder dark:bg-white/5">
                                 <div class="flex items-start flex-1 gap-2 p-1">
-                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/slack.svg" %} alt="" />
+                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/slack.svg" %} alt="" />
                                     <div class="flex-1 ltr:text-left rtl:text-right">
                                         <p class="dark:text-white">Slack <span class="text-muted">|</span> no-reply@email.slackhq.com</p>
                                         <p class="text-xs text-muted dark:text-darkmuted">Today, 18:30</p>
@@ -539,11 +539,11 @@
                             </div>
                             <div class="rounded pt-10 md:h-[calc(100vh-312px)] overflow-y-auto">
                                 <div class="px-10 pb-10">
-                                    <img {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
+                                    <img src = {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
                                     <h3 class="text-2xl font-semibold text-black dark:text-white mb-7">Invite your team</h3>
                                     <p class="mb-7 dark:text-darkmuted">Slack is most useful when your whole team can join the conversation. Try adding people to Sliced Admin Community to start being more productive together!</p>
                                     <a href="javaScript:;" class="btn bg-black dark:bg-white dark:text-black dark:border-white dark:hover:bg-white/[0.85] dark:hover:border-white/[0.85] border border-black rounded-md text-white transition-all duration-300 hover:bg-black/[0.85] hover:border-black/[0.85] inline-block mb-7">Invite People</a>
-                                    <img {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
+                                    <img src = {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
                                     <div class="flex flex-col items-center justify-between gap-6 lg:flex-row mb-7">
                                         <div class="flex items-start flex-1 gap-2 p-1">
                                             <img class="flex-none object-cover w-10 h-10 overflow-hidden rounded-full" {% static "/assets/images/logo-icon.svg" %} alt="" />
@@ -609,7 +609,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/slack.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/slack.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">Slack</p>
                                             <p class="text-xs text-muted line-clamp-1">Invite your team to Slack</p>
@@ -629,7 +629,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/chatgpt.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/chatgpt.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">ChatGPT</p>
                                             <p class="text-xs text-muted line-clamp-1">Welcome to ChatGPT</p>
@@ -657,7 +657,7 @@
                             </div>
                             <div class="flex flex-wrap items-start justify-between gap-3 px-4 py-2 border-b bg-light/20 border-black/10 dark:border-darkborder dark:bg-white/5">
                                 <div class="flex items-start flex-1 gap-2 p-1">
-                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/slack.svg" %} alt="" />
+                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/slack.svg" %} alt="" />
                                     <div class="flex-1 ltr:text-left rtl:text-right">
                                         <p class="dark:text-white">Slack <span class="text-muted">|</span> no-reply@email.slackhq.com</p>
                                         <p class="text-xs text-muted dark:text-darkmuted">Today, 18:30</p>
@@ -694,11 +694,11 @@
                             </div>
                             <div class="rounded pt-10 md:h-[calc(100vh-312px)] overflow-y-auto">
                                 <div class="px-10 pb-10">
-                                    <img {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
+                                    <img src = {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
                                     <h3 class="text-2xl font-semibold text-black dark:text-white mb-7">Invite your team</h3>
                                     <p class="mb-7 dark:text-darkmuted">Slack is most useful when your whole team can join the conversation. Try adding people to Sliced Admin Community to start being more productive together!</p>
                                     <a href="javaScript:;" class="btn bg-black dark:bg-white dark:text-black dark:border-white dark:hover:bg-white/[0.85] dark:hover:border-white/[0.85] border border-black rounded-md text-white transition-all duration-300 hover:bg-black/[0.85] hover:border-black/[0.85] inline-block mb-7">Invite People</a>
-                                    <img {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
+                                    <img src = {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
                                     <div class="flex flex-col items-center justify-between gap-6 lg:flex-row mb-7">
                                         <div class="flex items-start flex-1 gap-2 p-1">
                                             <img class="flex-none object-cover w-10 h-10 overflow-hidden rounded-full" {% static "/assets/images/logo-icon.svg" %} alt="" />
@@ -764,7 +764,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/avatar-6.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/avatar-6.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">Natali Craig</p>
                                             <p class="text-xs text-muted line-clamp-1">Are you free tonight?</p>
@@ -784,7 +784,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/slack.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/slack.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">Slack</p>
                                             <p class="text-xs text-muted line-clamp-1">Invite your team to Slack</p>
@@ -804,7 +804,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/chatgpt.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/chatgpt.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">ChatGPT</p>
                                             <p class="text-xs text-muted line-clamp-1">Welcome to ChatGPT</p>
@@ -832,7 +832,7 @@
                             </div>
                             <div class="flex flex-wrap items-start justify-between gap-3 px-4 py-2 border-b bg-light/20 border-black/10 dark:border-darkborder dark:bg-white/5">
                                 <div class="flex items-start flex-1 gap-2 p-1">
-                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/slack.svg" %} alt="" />
+                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/slack.svg" %} alt="" />
                                     <div class="flex-1 ltr:text-left rtl:text-right">
                                         <p class="dark:text-white">Slack <span class="text-muted">|</span> no-reply@email.slackhq.com</p>
                                         <p class="text-xs text-muted dark:text-darkmuted">Today, 18:30</p>
@@ -869,11 +869,11 @@
                             </div>
                             <div class="rounded pt-10 md:h-[calc(100vh-312px)] overflow-y-auto">
                                 <div class="px-10 pb-10">
-                                    <img {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
+                                    <img src = {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
                                     <h3 class="text-2xl font-semibold text-black dark:text-white mb-7">Invite your team</h3>
                                     <p class="mb-7 dark:text-darkmuted">Slack is most useful when your whole team can join the conversation. Try adding people to Sliced Admin Community to start being more productive together!</p>
                                     <a href="javaScript:;" class="btn bg-black dark:bg-white dark:text-black dark:border-white dark:hover:bg-white/[0.85] dark:hover:border-white/[0.85] border border-black rounded-md text-white transition-all duration-300 hover:bg-black/[0.85] hover:border-black/[0.85] inline-block mb-7">Invite People</a>
-                                    <img {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
+                                    <img src = {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
                                     <div class="flex flex-col items-center justify-between gap-6 lg:flex-row mb-7">
                                         <div class="flex items-start flex-1 gap-2 p-1">
                                             <img class="flex-none object-cover w-10 h-10 overflow-hidden rounded-full" {% static "/assets/images/logo-icon.svg" %} alt="" />
@@ -939,7 +939,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/avatar-8.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/avatar-8.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">Orlando Diggs</p>
                                             <p class="text-xs text-muted line-clamp-1">Hey man – Nah man sorry i don't. Should i get it?</p>
@@ -967,7 +967,7 @@
                             </div>
                             <div class="flex flex-wrap items-start justify-between gap-3 px-4 py-2 border-b bg-light/20 border-black/10 dark:border-darkborder dark:bg-white/5">
                                 <div class="flex items-start flex-1 gap-2 p-1">
-                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/slack.svg" %} alt="" />
+                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/slack.svg" %} alt="" />
                                     <div class="flex-1 ltr:text-left rtl:text-right">
                                         <p class="dark:text-white">Slack <span class="text-muted">|</span> no-reply@email.slackhq.com</p>
                                         <p class="text-xs text-muted dark:text-darkmuted">Today, 18:30</p>
@@ -1004,11 +1004,11 @@
                             </div>
                             <div class="rounded pt-10 md:h-[calc(100vh-312px)] overflow-y-auto">
                                 <div class="px-10 pb-10">
-                                    <img {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
+                                    <img src = {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
                                     <h3 class="text-2xl font-semibold text-black dark:text-white mb-7">Invite your team</h3>
                                     <p class="mb-7 dark:text-darkmuted">Slack is most useful when your whole team can join the conversation. Try adding people to Sliced Admin Community to start being more productive together!</p>
                                     <a href="javaScript:;" class="btn bg-black dark:bg-white dark:text-black dark:border-white dark:hover:bg-white/[0.85] dark:hover:border-white/[0.85] border border-black rounded-md text-white transition-all duration-300 hover:bg-black/[0.85] hover:border-black/[0.85] inline-block mb-7">Invite People</a>
-                                    <img {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
+                                    <img src = {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
                                     <div class="flex flex-col items-center justify-between gap-6 lg:flex-row mb-7">
                                         <div class="flex items-start flex-1 gap-2 p-1">
                                             <img class="flex-none object-cover w-10 h-10 overflow-hidden rounded-full" {% static "/assets/images/logo-icon.svg" %} alt="" />
@@ -1074,7 +1074,7 @@
                                         <div>
                                             <input type="checkbox" class="form-checkbox outborder-purple">
                                         </div>
-                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/avatar-7.png" %} alt="" />
+                                        <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/avatar-7.png" %} alt="" />
                                         <div class="flex-1 ltr:text-left rtl:text-right">
                                             <p class="line-clamp-1 dark:text-white">Drew Cano</p>
                                             <p class="text-xs text-muted line-clamp-1">Let's go fishing! - Hey, You wanna join me and Fred at the lake tomorrow? It'll be awesome.</p>
@@ -1102,7 +1102,7 @@
                             </div>
                             <div class="flex flex-wrap items-start justify-between gap-3 px-4 py-2 border-b bg-light/20 border-black/10 dark:border-darkborder dark:bg-white/5">
                                 <div class="flex items-start flex-1 gap-2 p-1">
-                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" {% static "/assets/images/slack.svg" %} alt="" />
+                                    <img class="flex-none object-cover overflow-hidden rounded-full w-9 h-9" src = {% static "/assets/images/slack.svg" %} alt="" />
                                     <div class="flex-1 ltr:text-left rtl:text-right">
                                         <p class="dark:text-white">Slack <span class="text-muted">|</span> no-reply@email.slackhq.com</p>
                                         <p class="text-xs text-muted dark:text-darkmuted">Today, 18:30</p>
@@ -1139,11 +1139,11 @@
                             </div>
                             <div class="rounded pt-10 md:h-[calc(100vh-312px)] overflow-y-auto">
                                 <div class="px-10 pb-10">
-                                    <img {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
+                                    <img src = {% static "/assets/images/slack-logo.svg" %} alt="slack logo" class="mb-7" />
                                     <h3 class="text-2xl font-semibold text-black dark:text-white mb-7">Invite your team</h3>
                                     <p class="mb-7 dark:text-darkmuted">Slack is most useful when your whole team can join the conversation. Try adding people to Sliced Admin Community to start being more productive together!</p>
                                     <a href="javaScript:;" class="btn bg-black dark:bg-white dark:text-black dark:border-white dark:hover:bg-white/[0.85] dark:hover:border-white/[0.85] border border-black rounded-md text-white transition-all duration-300 hover:bg-black/[0.85] hover:border-black/[0.85] inline-block mb-7">Invite People</a>
-                                    <img {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
+                                    <img src = {% static "/assets/images/mail-banner.png" %} alt="banner" class="w-full mb-7" />
                                     <div class="flex flex-col items-center justify-between gap-6 lg:flex-row mb-7">
                                         <div class="flex items-start flex-1 gap-2 p-1">
                                             <img class="flex-none object-cover w-10 h-10 overflow-hidden rounded-full" {% static "/assets/images/logo-icon.svg" %} alt="" />
@@ -1182,5 +1182,5 @@
 {% block js %}
 <script  src = {%static "/assets/js/pages/form-editor.js" %}></script>
 
-<script type="module" src = {% static "/assets/js/main.js" %}></script>
+<script src = {% static "/assets/js/main.js" %}></script>
 {% endblock js %}

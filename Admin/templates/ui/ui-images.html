@@ -11,25 +11,25 @@
             <div class="card">
                 <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Images Responsive</h2>
                 <div>
-                    <img {% static "/assets/images/images-6.jpg" %} class="object-cover w-full md:h-72" alt="">
+                    <img src = {% static "/assets/images/images-6.jpg" %} class="object-cover w-full md:h-72" alt="">
                 </div>
             </div>
             <div class="card">
                 <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Images Rounded</h2>
                 <div>
-                    <img {% static "/assets/images/images-2.jpg" %} class="object-cover w-full rounded-md md:h-72" alt="">
+                    <img src = {% static "/assets/images/images-2.jpg" %} class="object-cover w-full rounded-md md:h-72" alt="">
                 </div>
             </div>
             <div class="card">
                 <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Images Circle</h2>
                 <div>
-                    <img {% static "/assets/images/images-3.jpg" %} class="mx-auto rounded-full h-44 w-44" alt="">
+                    <img src = {% static "/assets/images/images-3.jpg" %} class="mx-auto rounded-full h-44 w-44" alt="">
                 </div>
             </div>
             <div class="card">
                 <h2 class="mb-4 text-base font-semibold text-black capitalize dark:text-white/80">Images With Ring</h2>
                 <div>
-                    <img {% static "/assets/images/images-4.jpg" %} class="object-cover w-full rounded ring-offset-4 ring-2 ring-light dark:ring-darkborder md:h-72" alt="">
+                    <img src = {% static "/assets/images/images-4.jpg" %} class="object-cover w-full rounded ring-offset-4 ring-2 ring-light dark:ring-darkborder md:h-72" alt="">
                 </div>
             </div>
         </div>
@@ -37,5 +37,5 @@
     <!-- End All Card -->
 {% endblock content %}
 {% block js %}
-<script type="module" src = {% static "/assets/js/main.js" %}></script>
+<script src = {% static "/assets/js/main.js" %}></script>
 {% endblock js %}

@@ -1,7 +1,7 @@
 /*
-Template Name: Domiex - Admin & Dashboard Template
-Author: Pixeleyez
-Version: 1.0.0
+Template Name: Sliced - Admin & Dashboard Template
+Author: SRBThemes
+Version: 2.3.0
 File: tailwind scss files
 */
 
@@ -17,31 +17,34 @@ File: tailwind scss files
   position: relative;
 
   ul {
-  position: absolute;
-  z-index: 50;
-  margin-top: 0.125rem;
-  min-width: 170px;
-  border-radius: 0.25rem;
-  border-width: 1px;
-  border-color: rgb(50 58 70 / 0.1);
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 0px;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  
-  li{
-      a,button, div{
-          display: flex;
-          align-items: center;
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.5rem;
-          padding-bottom: 0.5rem;
-      }
-  }
+    position: absolute;
+    z-index: 50;
+    margin-top: 0.125rem;
+    min-width: 170px;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    border-color: rgb(50 58 70 / 0.1);
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    padding: 0px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
-}
+    li {
+
+      a,
+      button,
+      div {
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+  }
 }
 
 // button sidebar
@@ -100,9 +103,9 @@ File: tailwind scss files
   }
 }
 
-.vertical.toggle-sidebar .sidebar:hover .help-box ,
-  .vertical.toggle-sidebar .sidebar,
-  .detached .detached-img {
+.vertical.toggle-sidebar .sidebar:hover .help-box,
+.vertical.toggle-sidebar .sidebar,
+.detached .detached-img {
   display: block;
 }
 
@@ -125,10 +128,11 @@ File: tailwind scss files
 }
 
 @media (min-width: 1024px) {
+
   .vertical.toggle-sidebar .sidebar .sub-menu,
   .vertical.toggle-sidebar .sidebar .nav-item a span,
   .vertical.toggle-sidebar .sidebar .nav-item a .dropdown-icon,
-  .vertical.toggle-sidebar .sidebar h2 ,
+  .vertical.toggle-sidebar .sidebar h2,
   .vertical.toggle-sidebar .sidebar .main-logo .logo,
   .vertical.toggle-sidebar .sidebar:hover .main-logo .logo-icon,
   .vertical.toggle-sidebar .sidebar .help-box {
@@ -137,7 +141,7 @@ File: tailwind scss files
 }
 
 .vertical.toggle-sidebar.dark .sidebar:hover .main-logo .logo.dark-logo,
-  .vertical.toggle-sidebar .sidebar:hover .main-logo .logo.light-logo {
+.vertical.toggle-sidebar .sidebar:hover .main-logo .logo.light-logo {
   display: none;
 }
 
@@ -146,9 +150,10 @@ File: tailwind scss files
 }
 
 @media (min-width: 1024px) {
+
   .vertical.toggle-sidebar .sidebar:hover .nav-item a span,
-  .vertical.toggle-sidebar .sidebar:hover h2 ,
-  .vertical.toggle-sidebar .sidebar:hover .sub-menu ,
+  .vertical.toggle-sidebar .sidebar:hover h2,
+  .vertical.toggle-sidebar .sidebar:hover .sub-menu,
   .vertical.toggle-sidebar .sidebar .main-logo .logo-icon,
   .vertical.toggle-sidebar .sidebar:hover .main-logo .logo {
     display: block;
@@ -159,7 +164,7 @@ File: tailwind scss files
   }
 
   .vertical.toggle-sidebar .sidebar:hover .nav-item a {
-    justify-content: space-between;
+    justify-content: start;
   }
 
   .vertical.toggle-sidebar .sidebar:hover .nav-item a .dropdown-icon {
@@ -172,5 +177,27 @@ File: tailwind scss files
 
   .vertical.toggle-sidebar .sidebar:hover ul {
     gap: 0.25rem;
+  }
+}
+
+
+html[data-mode="dark"] {
+  .dt-paging.paging_full_numbers .pagination a {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .dt-container .dt-search input {
+    background-color: #000;
+  }
+
+  .dt-container .dt-length select {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .dt-container .dt-buttons .dt-button {
+    background-color: #000;
+    color: #fff;
   }
 }

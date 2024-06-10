@@ -10,11 +10,11 @@
 <div class="bg-[#f9fbfd] dark:bg-dark">
 
     <!-- Start detached bg -->
-    <div class="bg-[url('../images/bg-main.png')] bg-black min-h-[220px] sm:min-h-[250px] bg-bottom fixed hidden w-full -z-50 detached-img"></div>
+    <div class="bg-[url('/static/assets/images/bg-main.png')] bg-black min-h-[220px] sm:min-h-[250px] bg-bottom fixed hidden w-full -z-50 detached-img"></div>
     <!-- End detached bg -->
 
     <!-- Start Menu Sidebar Olverlay -->
-    <div x-cloak class="fixed inset-0 bg-black/60 dark:bg-dark/90 z-[999] lg:hidden" :class="{'hidden' : !$store.app.sidebar}" @click="$store.app.toggleSidebar()"></div>
+    <div x-cloak class="fixed inset-0 bg-black/60 dark:bg-dark/90 z-10 lg:hidden" :class="{'hidden' : !$store.app.sidebar}" @click="$store.app.toggleSidebar()"></div>
     <!-- End Menu Sidebar Olverlay -->
 
     <!-- Start Main Content -->
